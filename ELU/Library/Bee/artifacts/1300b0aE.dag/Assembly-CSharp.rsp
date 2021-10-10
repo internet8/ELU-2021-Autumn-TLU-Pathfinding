@@ -322,6 +322,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/ImagePass.cs"
+"Assets/Scripts/JsonHelper.cs"
+"Assets/Scripts/Pathfinding.cs"
+"Assets/Scripts/TextureEditor.cs"
+"Assets/Scripts/Vertex.cs"
 -langversion:8.0
 
 /deterministic
