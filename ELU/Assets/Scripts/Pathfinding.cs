@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System;
 
 public class Pathfinding : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Pathfinding : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject floorObj;
     private TextureEditor textureEditor;
-    private Vertex[] graph;
+    public Vertex[] graph, originalGraph;
     private Queue<Vertex> queue = new Queue<Vertex>();
 
     void Start()
@@ -18,18 +19,23 @@ public class Pathfinding : MonoBehaviour
         // tex
         textureEditor = gameObject.GetComponent<TextureEditor>();
         spriteRenderer = floorObj.GetComponent<SpriteRenderer>();
-        floor = new Texture2D(originalFloor.width, originalFloor.height);
-        floor.SetPixels(originalFloor.GetPixels());
-        floor.Apply();
         // json
         string json = fileToString("AstraSilva4Aligned.txt");
         //Debug.Log(json);
-        graph = JsonHelper.getJsonArray<Vertex>(json);
-        // pathfinding, the code below should be in its own method
-        // ui needed to select two vertices from the graph
-        floor = GetFloorWithPath(graph[6], graph[23], floor, Color.red);
+        originalGraph = JsonHelper.getJsonArray<Vertex>(json);
+    }
+
+    public void FindPath (int from, int to) {
+        // new texture
+        floor = new Texture2D(originalFloor.width, originalFloor.height);
+        floor.SetPixels(originalFloor.GetPixels());
+        floor.Apply();
+        //new graph
+        graph = new Vertex[originalGraph.Length];
+        Array.Copy(originalGraph, graph, originalGraph.Length);
+        floor = GetFloorWithPath(graph[from], graph[to], floor, Color.red);
         // applying the returned texture
-        spriteRenderer.sprite = Sprite.Create(floor, new Rect(0.0f, 0.0f, floor.width, floor.height), new Vector2(0.5f, 0.5f), 100.0f);
+        spriteRenderer.sprite = Sprite.Create(floor, new Rect(0.0f, 0.0f, floor.width, floor.height), new Vector2(0.5f, 0.5f), 1.0f);
     }
 
     public string fileToString (string fileName) {
@@ -75,8 +81,8 @@ public class Pathfinding : MonoBehaviour
                 Vertex v = graph[edge];
                 // distance from the starting point to the current point
                 float dist = vertex.shortestDist + Vector2.Distance(new Vector2(vertex.x, vertex.y), new Vector2(v.x, v.y));
-                // +100 distance if the vertex has the room flag, encourages the algorithm to find paths through the hallway
-                dist += v.room ? 100 : 0;
+                // +3000 distance if the vertex has the room flag, encourages the algorithm to find paths through the hallway
+                dist += v.room ? 3000 : 0;
                 if (v.shortestDist > dist) {
                     v.parent = vertex;
                     v.shortestDist = dist;

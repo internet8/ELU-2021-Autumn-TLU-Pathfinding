@@ -323,8 +323,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/ImagePass.cs"
 "Assets/Scripts/JsonHelper.cs"
+"Assets/Scripts/MapController.cs"
 "Assets/Scripts/Pathfinding.cs"
 "Assets/Scripts/TextureEditor.cs"
+"Assets/Scripts/UI.cs"
 "Assets/Scripts/Vertex.cs"
 -langversion:8.0
 

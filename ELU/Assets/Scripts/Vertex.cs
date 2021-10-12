@@ -15,6 +15,6 @@ public class Vertex
     public bool wheelchair;
     public string message;
     // for pathfinding
-    public float shortestDist = 9999;
+    public float shortestDist = 999999;
     public Vertex parent = null;
 }
