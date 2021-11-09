@@ -11,8 +11,9 @@ public class Pathfinding : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject floorObj;
     private TextureEditor textureEditor;
-    public Vertex[] graph, originalGraph;
+    public Vertex[] graph;
     private Queue<Vertex> queue = new Queue<Vertex>();
+    public Texture2D startIcon, endIcon;
 
     void Start()
     {
@@ -20,9 +21,11 @@ public class Pathfinding : MonoBehaviour
         textureEditor = gameObject.GetComponent<TextureEditor>();
         spriteRenderer = floorObj.GetComponent<SpriteRenderer>();
         // json
-        string json = fileToString("AstraSilva4Aligned.txt");
+        TextAsset floorJSON = (TextAsset)Resources.Load("AstraSilva0Aligned");
+        string json = floorJSON.text;
+        //string json = fileToString("AstraSilva0Aligned.txt");
         //Debug.Log(json);
-        originalGraph = JsonHelper.getJsonArray<Vertex>(json);
+        graph = JsonHelper.getJsonArray<Vertex>(json);
     }
 
     public void FindPath (int from, int to) {
@@ -31,11 +34,17 @@ public class Pathfinding : MonoBehaviour
         floor.SetPixels(originalFloor.GetPixels());
         floor.Apply();
         //new graph
-        graph = new Vertex[originalGraph.Length];
-        Array.Copy(originalGraph, graph, originalGraph.Length);
-        floor = GetFloorWithPath(graph[from], graph[to], floor, Color.red);
+        ResetGraph();
+        floor = GetFloorWithPath(graph[from], graph[to], floor, new Color(0.7f, 0.1f, 0.2f)); // new Color(0.72f, 0.07f, 0.2f)
         // applying the returned texture
         spriteRenderer.sprite = Sprite.Create(floor, new Rect(0.0f, 0.0f, floor.width, floor.height), new Vector2(0.5f, 0.5f), 1.0f);
+    }
+
+    public void ResetGraph () {
+        foreach (Vertex v in graph) {
+            v.shortestDist = 999999;
+            v.parent = null;
+        }
     }
 
     public string fileToString (string fileName) {
@@ -60,15 +69,18 @@ public class Pathfinding : MonoBehaviour
         // drawing the path recursively from the endVertex to the startVertex through parents
         Vertex currentDrawVertex = endVertex;
         RecursiveDraw(endVertex, floor, color, 0);
-        textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, startVertex.r, startVertex.r, floor, Color.green);
-        textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, endVertex.r, endVertex.r, floor, Color.green);
+        textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
+        textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
+        textureEditor.DrawImage(startVertex.x, floor.height - startVertex.y, floor, startIcon, color);
+        textureEditor.DrawImage(endVertex.x, floor.height - endVertex.y, floor, endIcon, color);
         // returning the final texture
         return floor;
     }
 
     private void RecursiveDraw (Vertex vertex, Texture2D floor, Color color, int count) {
         if (count < graph.Length && vertex.parent != null) {
-            textureEditor.DrawLine(vertex.x, floor.height - vertex.y, vertex.parent.x, floor.height - vertex.parent.y, floor, color);
+            textureEditor.DrawLine(vertex.x, floor.height - vertex.y, vertex.parent.x, floor.height - vertex.parent.y, floor, Color.black, 8, 0);
+            textureEditor.DrawLine(vertex.x, floor.height - vertex.y, vertex.parent.x, floor.height - vertex.parent.y, floor, color, 6, 0);
             RecursiveDraw(vertex.parent, floor, color, count++);
         }
     }

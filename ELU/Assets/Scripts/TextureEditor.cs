@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextureEditor : MonoBehaviour
 {
-    public void DrawLine (int x1, int y1, int x2, int y2, Texture2D texture, Color color)
+    public void DrawLine (int x1, int y1, int x2, int y2, Texture2D texture, Color color, int strokeWeight, int drawStep)
     {
         int w = x2 - x1;
         int h = y2 - y1;
@@ -22,12 +22,19 @@ public class TextureEditor : MonoBehaviour
             dx2 = 0;
         }
         int numerator = longest >> 1;
+        int currentDrawStep = 0;
         for (int i = 0; i <= longest; i++)
         {
-            texture.SetPixel(x1, y1, color);
-            texture.SetPixel(x1+1, y1, color);
-            texture.SetPixel(x1, y1+1, color);
-            texture.SetPixel(x1+1, y1+1, color);
+            //texture.SetPixel(x1, y1, color);
+            if (currentDrawStep == drawStep) {
+                for (int j = x1 - strokeWeight / 2; j < x1 + strokeWeight / 2; j++) {
+                    for (int k = y1 - strokeWeight / 2; k < y1 + strokeWeight / 2; k++) {
+                        texture.SetPixel(j, k, color);
+                    }
+                }
+                currentDrawStep = -1;
+            }
+            currentDrawStep++;
             numerator += shortest;
             if (!(numerator < longest))
             {
@@ -71,6 +78,22 @@ public class TextureEditor : MonoBehaviour
                 texture.SetPixel(startX + x, startY - y, color);
                 texture.SetPixel(startX + x, startY + y, color);
             }
+        }
+        texture.Apply();
+    }
+
+    public void DrawImage (int startX, int startY, Texture2D texture, Texture2D image, Color color) {
+        int x = 0;
+        int y = 0;
+        for (int i = startX - image.width / 2; i < startX + image.width / 2; i++) {
+            x++;
+            for (int j = startY - image.height / 2; j < startY + image.height / 2; j++) {
+                if (image.GetPixel(x, y).a == 1) {
+                    texture.SetPixel(i, j, color);
+                } 
+                y++;
+            }
+            y = 0;
         }
         texture.Apply();
     }

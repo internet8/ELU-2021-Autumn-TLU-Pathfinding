@@ -1,0 +1,2490 @@
+[
+	{
+		"index": 0,
+		"x": 1041,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			109,
+			1
+		],
+		"type": "S202",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 1,
+		"x": 1109,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			110,
+			0
+		],
+		"type": "S203",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 2,
+		"x": 1150,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			111
+		],
+		"type": "S204",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 3,
+		"x": 1217,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			113
+		],
+		"type": "S205",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 4,
+		"x": 1252,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			114
+		],
+		"type": "S206",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 5,
+		"x": 1326,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			115
+		],
+		"type": "S207",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 6,
+		"x": 1407,
+		"y": 270,
+		"r": "15",
+		"edges": [
+			118
+		],
+		"type": "S210",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 7,
+		"x": 1499,
+		"y": 330,
+		"r": "15",
+		"edges": [
+			8
+		],
+		"type": "S211",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 8,
+		"x": 1499,
+		"y": 423,
+		"r": "15",
+		"edges": [
+			120,
+			7,
+			35
+		],
+		"type": "S212",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 9,
+		"x": 1394,
+		"y": 423,
+		"r": "15",
+		"edges": [
+			116,
+			10
+		],
+		"type": "S219",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 10,
+		"x": 1326,
+		"y": 423,
+		"r": "15",
+		"edges": [
+			9
+		],
+		"type": "S220",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 11,
+		"x": 1179,
+		"y": 392,
+		"r": "15",
+		"edges": [
+			112
+		],
+		"type": "S221",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 12,
+		"x": 821,
+		"y": 392,
+		"r": "15",
+		"edges": [
+			105
+		],
+		"type": "S232",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 13,
+		"x": 607,
+		"y": 392,
+		"r": "15",
+		"edges": [
+			72
+		],
+		"type": "S233",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 14,
+		"x": 498,
+		"y": 406,
+		"r": "15",
+		"edges": [
+			68,
+			73,
+			66
+		],
+		"type": "S235",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 15,
+		"x": 254,
+		"y": 392,
+		"r": "15",
+		"edges": [
+			64
+		],
+		"type": "S236",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 16,
+		"x": 254,
+		"y": 279,
+		"r": "15",
+		"edges": [
+			64
+		],
+		"type": "S238",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 17,
+		"x": 467,
+		"y": 279,
+		"r": "15",
+		"edges": [
+			67
+		],
+		"type": "S240",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 18,
+		"x": 505,
+		"y": 279,
+		"r": "15",
+		"edges": [
+			68
+		],
+		"type": "S241",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 19,
+		"x": 592,
+		"y": 279,
+		"r": "15",
+		"edges": [
+			70,
+			71
+		],
+		"type": "S243",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 20,
+		"x": 659,
+		"y": 279,
+		"r": "15",
+		"edges": [
+			104
+		],
+		"type": "S244",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 21,
+		"x": 1179,
+		"y": 739,
+		"r": "15",
+		"edges": [
+			124
+		],
+		"type": "A202",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 22,
+		"x": 1179,
+		"y": 645,
+		"r": "15",
+		"edges": [
+			123
+		],
+		"type": "A203",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 23,
+		"x": 1179,
+		"y": 575,
+		"r": "15",
+		"edges": [
+			122
+		],
+		"type": "A204",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 24,
+		"x": "1272",
+		"y": "972",
+		"r": "15",
+		"edges": [
+			126,
+			131
+		],
+		"type": "Library",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "Library/Study Centre"
+	},
+	{
+		"index": 25,
+		"x": "707",
+		"y": "1024",
+		"r": "15",
+		"edges": [
+			132
+		],
+		"type": "A206",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "Study Centre"
+	},
+	{
+		"index": 26,
+		"x": 888,
+		"y": 875,
+		"r": "15",
+		"edges": [
+			133
+		],
+		"type": "A207",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 27,
+		"x": 853,
+		"y": 875,
+		"r": "15",
+		"edges": [
+			134
+		],
+		"type": "A208",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 28,
+		"x": 784,
+		"y": 875,
+		"r": "15",
+		"edges": [
+			135
+		],
+		"type": "A209",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 29,
+		"x": 753,
+		"y": 875,
+		"r": "15",
+		"edges": [
+			136
+		],
+		"type": "A210",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 30,
+		"x": 1394,
+		"y": 731,
+		"r": "15",
+		"edges": [
+			128
+		],
+		"type": "A211",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 31,
+		"x": 1417,
+		"y": 685,
+		"r": "15",
+		"edges": [
+			128
+		],
+		"type": "A212",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 32,
+		"x": 1445,
+		"y": 685,
+		"r": "15",
+		"edges": [
+			130
+		],
+		"type": "A213",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 33,
+		"x": 1407,
+		"y": 508,
+		"r": "15",
+		"edges": [
+			121
+		],
+		"type": "A218",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 34,
+		"x": 1445,
+		"y": 560,
+		"r": "15",
+		"edges": [
+			121
+		],
+		"type": "A219",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 35,
+		"x": 1499,
+		"y": 508,
+		"r": "15",
+		"edges": [
+			121,
+			8
+		],
+		"type": "A220",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 36,
+		"x": "361",
+		"y": "894",
+		"r": "15",
+		"edges": [
+			91,
+			95
+		],
+		"type": "A222",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "European Hall"
+	},
+	{
+		"index": 37,
+		"x": 477,
+		"y": 1002,
+		"r": "15",
+		"edges": [
+			90,
+			38
+		],
+		"type": "A224",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 38,
+		"x": 370,
+		"y": 1002,
+		"r": "15",
+		"edges": [
+			37,
+			39,
+			92
+		],
+		"type": "A225",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 39,
+		"x": 254,
+		"y": 1002,
+		"r": "15",
+		"edges": [
+			38,
+			93
+		],
+		"type": "A226",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 40,
+		"x": 607,
+		"y": 739,
+		"r": "15",
+		"edges": [
+			85
+		],
+		"type": "A227",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 41,
+		"x": 607,
+		"y": 706,
+		"r": "15",
+		"edges": [
+			84
+		],
+		"type": "A228",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 42,
+		"x": 607,
+		"y": 645,
+		"r": "15",
+		"edges": [
+			83
+		],
+		"type": "A229",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 43,
+		"x": 607,
+		"y": 575,
+		"r": "15",
+		"edges": [
+			75
+		],
+		"type": "A230",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 44,
+		"x": 530,
+		"y": 537,
+		"r": "15",
+		"edges": [
+			77,
+			78
+		],
+		"type": "A231",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 45,
+		"x": 970,
+		"y": 731,
+		"r": "15",
+		"edges": [
+			100
+		],
+		"type": "A235",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 46,
+		"x": 956,
+		"y": 669,
+		"r": "15",
+		"edges": [
+			101
+		],
+		"type": "A236",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 47,
+		"x": 900,
+		"y": 584,
+		"r": "15",
+		"edges": [
+			102,
+			48
+		],
+		"type": "A237",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 48,
+		"x": 900,
+		"y": 659,
+		"r": "15",
+		"edges": [
+			47
+		],
+		"type": "A238",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 49,
+		"x": "417",
+		"y": 575,
+		"r": "15",
+		"edges": [
+			79,
+			80
+		],
+		"type": "A242",
+		"caution": false,
+		"room": true,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "Big Circle Auditorium"
+	},
+	{
+		"index": 50,
+		"x": 821,
+		"y": 290,
+		"r": "15",
+		"edges": [
+			105
+		],
+		"type": "WC0",
+		"caution": false,
+		"room": false,
+		"restroom": true,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 51,
+		"x": 1508,
+		"y": 786,
+		"r": "15",
+		"edges": [
+			130
+		],
+		"type": "WC1",
+		"caution": false,
+		"room": false,
+		"restroom": true,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 52,
+		"x": 659,
+		"y": 853,
+		"r": "15",
+		"edges": [
+			97
+		],
+		"type": "WC2",
+		"caution": false,
+		"room": false,
+		"restroom": true,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 53,
+		"x": "622",
+		"y": 853,
+		"r": "15",
+		"edges": [
+			96
+		],
+		"type": "WC3",
+		"caution": false,
+		"room": false,
+		"restroom": true,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": true,
+		"message": ""
+	},
+	{
+		"index": 54,
+		"x": 577,
+		"y": 845,
+		"r": "15",
+		"edges": [
+			87
+		],
+		"type": "WC4",
+		"caution": false,
+		"room": false,
+		"restroom": true,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 55,
+		"x": 970,
+		"y": 307,
+		"r": "15",
+		"edges": [
+			107
+		],
+		"type": "Stairs0",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 56,
+		"x": 1486,
+		"y": 232,
+		"r": "15",
+		"edges": [
+			119
+		],
+		"type": "Stairs1",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 57,
+		"x": 956,
+		"y": 860,
+		"r": "15",
+		"edges": [
+			98
+		],
+		"type": "Stairs2",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 58,
+		"x": 488,
+		"y": 659,
+		"r": "15",
+		"edges": [
+			81
+		],
+		"type": "Stairs3",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 59,
+		"x": 192,
+		"y": 919,
+		"r": "15",
+		"edges": [
+			62
+		],
+		"type": "Stairs4",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 60,
+		"x": 135,
+		"y": 385,
+		"r": "15",
+		"edges": [
+			63
+		],
+		"type": "Stairs5",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": true,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 61,
+		"x": 1041,
+		"y": 461,
+		"r": "15",
+		"edges": [
+			108,
+			103,
+			109
+		],
+		"type": "Elevator0",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": true,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 62,
+		"x": 192,
+		"y": 963,
+		"r": "15",
+		"edges": [
+			94,
+			59
+		],
+		"type": "Elevator1",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": true,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 63,
+		"x": 135,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			60,
+			64
+		],
+		"type": "Hallway0",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 64,
+		"x": 254,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			63,
+			16,
+			15,
+			65
+		],
+		"type": "Hallway1",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 65,
+		"x": 393,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			64,
+			66,
+			67
+		],
+		"type": "Hallway2",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 66,
+		"x": 393,
+		"y": 406,
+		"r": "10",
+		"edges": [
+			65,
+			14
+		],
+		"type": "Hallway3",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 67,
+		"x": 467,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			65,
+			17,
+			68
+		],
+		"type": "Hallway4",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 68,
+		"x": 498,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			67,
+			18,
+			14,
+			69
+		],
+		"type": "Hallway5",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 69,
+		"x": 577,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			68,
+			70,
+			72,
+			73
+		],
+		"type": "Hallway6",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 70,
+		"x": 577,
+		"y": 290,
+		"r": "10",
+		"edges": [
+			69,
+			19
+		],
+		"type": "Hallway7",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 71,
+		"x": 607,
+		"y": 290,
+		"r": "10",
+		"edges": [
+			19,
+			72
+		],
+		"type": "Hallway8",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 72,
+		"x": 607,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			71,
+			13,
+			69,
+			104
+		],
+		"type": "Hallway9",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 73,
+		"x": 577,
+		"y": 406,
+		"r": "10",
+		"edges": [
+			69,
+			14,
+			74
+		],
+		"type": "Hallway10",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 74,
+		"x": 561,
+		"y": 491,
+		"r": "10",
+		"edges": [
+			73,
+			78,
+			75
+		],
+		"type": "Hallway11",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 75,
+		"x": 561,
+		"y": 575,
+		"r": "10",
+		"edges": [
+			76,
+			43,
+			74
+		],
+		"type": "Hallway12",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 76,
+		"x": 561,
+		"y": 601,
+		"r": "10",
+		"edges": [
+			77,
+			75,
+			82
+		],
+		"type": "Hallway13",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 77,
+		"x": 530,
+		"y": 593,
+		"r": "10",
+		"edges": [
+			76,
+			44
+		],
+		"type": "Hallway14",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 78,
+		"x": 530,
+		"y": 491,
+		"r": "10",
+		"edges": [
+			74,
+			79,
+			44
+		],
+		"type": "Hallway15",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 79,
+		"x": 454,
+		"y": 537,
+		"r": "10",
+		"edges": [
+			78,
+			49
+		],
+		"type": "Hallway16",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 80,
+		"x": 444,
+		"y": 624,
+		"r": "10",
+		"edges": [
+			49,
+			81
+		],
+		"type": "Hallway17",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 81,
+		"x": 488,
+		"y": 624,
+		"r": "10",
+		"edges": [
+			80,
+			82,
+			58
+		],
+		"type": "Hallway18",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 82,
+		"x": 561,
+		"y": 624,
+		"r": "10",
+		"edges": [
+			81,
+			76,
+			83
+		],
+		"type": "Hallway19",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 83,
+		"x": 561,
+		"y": 645,
+		"r": "10",
+		"edges": [
+			82,
+			42,
+			84
+		],
+		"type": "Hallway20",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 84,
+		"x": 561,
+		"y": 706,
+		"r": "10",
+		"edges": [
+			83,
+			41,
+			85
+		],
+		"type": "Hallway21",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 85,
+		"x": 561,
+		"y": 739,
+		"r": "10",
+		"edges": [
+			84,
+			40,
+			86
+		],
+		"type": "Hallway22",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 86,
+		"x": 561,
+		"y": 808,
+		"r": "10",
+		"edges": [
+			85,
+			87,
+			88
+		],
+		"type": "Hallway23",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 87,
+		"x": 577,
+		"y": 808,
+		"r": "10",
+		"edges": [
+			86,
+			96,
+			54
+		],
+		"type": "Hallway24",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 88,
+		"x": 530,
+		"y": 808,
+		"r": "10",
+		"edges": [
+			86,
+			89
+		],
+		"type": "Hallway25",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 89,
+		"x": 530,
+		"y": 963,
+		"r": "10",
+		"edges": [
+			88,
+			90
+		],
+		"type": "Hallway26",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 90,
+		"x": 488,
+		"y": 949,
+		"r": "10",
+		"edges": [
+			89,
+			91,
+			37,
+			92
+		],
+		"type": "Hallway27",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 91,
+		"x": 488,
+		"y": "894",
+		"r": "10",
+		"edges": [
+			90,
+			36
+		],
+		"type": "Hallway28",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 92,
+		"x": 370,
+		"y": 949,
+		"r": "10",
+		"edges": [
+			38,
+			90
+		],
+		"type": "Hallway29",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 93,
+		"x": 254,
+		"y": 949,
+		"r": "10",
+		"edges": [
+			39,
+			94
+		],
+		"type": "Hallway30",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 94,
+		"x": 234,
+		"y": 949,
+		"r": "10",
+		"edges": [
+			95,
+			93,
+			62
+		],
+		"type": "Hallway31",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 95,
+		"x": 234,
+		"y": "894",
+		"r": "10",
+		"edges": [
+			36,
+			94
+		],
+		"type": "Hallway32",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 96,
+		"x": "622",
+		"y": 808,
+		"r": "10",
+		"edges": [
+			87,
+			97,
+			53
+		],
+		"type": "Hallway33",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 97,
+		"x": 659,
+		"y": 808,
+		"r": "10",
+		"edges": [
+			96,
+			52,
+			98
+		],
+		"type": "Hallway34",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 98,
+		"x": 956,
+		"y": 808,
+		"r": "10",
+		"edges": [
+			97,
+			57,
+			99
+		],
+		"type": "Hallway35",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 99,
+		"x": 1041,
+		"y": 815,
+		"r": "10",
+		"edges": [
+			98,
+			100,
+			124
+		],
+		"type": "Hallway36",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 100,
+		"x": 1004,
+		"y": 716,
+		"r": "10",
+		"edges": [
+			99,
+			45,
+			101
+		],
+		"type": "Hallway37",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 101,
+		"x": 986,
+		"y": 659,
+		"r": "10",
+		"edges": [
+			100,
+			46,
+			102
+		],
+		"type": "Hallway38",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 102,
+		"x": 956,
+		"y": 560,
+		"r": "10",
+		"edges": [
+			101,
+			47,
+			103
+		],
+		"type": "Hallway39",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 103,
+		"x": 935,
+		"y": 461,
+		"r": "10",
+		"edges": [
+			61,
+			102,
+			107
+		],
+		"type": "Hallway40",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 104,
+		"x": 659,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			72,
+			20,
+			105
+		],
+		"type": "Hallway41",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 105,
+		"x": 821,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			104,
+			50,
+			12,
+			106
+		],
+		"type": "Hallway42",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 106,
+		"x": 880,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			105,
+			107
+		],
+		"type": "Hallway43",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 107,
+		"x": 970,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			103,
+			106,
+			55,
+			109
+		],
+		"type": "Hallway44",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 108,
+		"x": 1109,
+		"y": 454,
+		"r": "10",
+		"edges": [
+			122,
+			61
+		],
+		"type": "Hallway45",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 109,
+		"x": 1041,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			107,
+			61,
+			0,
+			110
+		],
+		"type": "Hallway46",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 110,
+		"x": 1109,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			109,
+			1,
+			111
+		],
+		"type": "Hallway47",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 111,
+		"x": 1150,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			110,
+			2,
+			112
+		],
+		"type": "Hallway48",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 112,
+		"x": 1179,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			111,
+			11,
+			113
+		],
+		"type": "Hallway49",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 113,
+		"x": 1217,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			112,
+			3,
+			114
+		],
+		"type": "Hallway50",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 114,
+		"x": 1252,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			113,
+			4,
+			115
+		],
+		"type": "Hallway51",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 115,
+		"x": 1326,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			114,
+			5,
+			116
+		],
+		"type": "Hallway52",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 116,
+		"x": 1394,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			115,
+			9,
+			117
+		],
+		"type": "Hallway53",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 117,
+		"x": 1445,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			116,
+			118,
+			120
+		],
+		"type": "Hallway54",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 118,
+		"x": 1445,
+		"y": 270,
+		"r": "10",
+		"edges": [
+			117,
+			6,
+			119
+		],
+		"type": "Hallway55",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 119,
+		"x": 1445,
+		"y": 232,
+		"r": "10",
+		"edges": [
+			118,
+			56
+		],
+		"type": "Hallway56",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 120,
+		"x": 1445,
+		"y": 423,
+		"r": "10",
+		"edges": [
+			117,
+			8,
+			121
+		],
+		"type": "Hallway57",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 121,
+		"x": 1445,
+		"y": 508,
+		"r": "10",
+		"edges": [
+			120,
+			33,
+			35,
+			34
+		],
+		"type": "Hallway58",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 122,
+		"x": 1127,
+		"y": 601,
+		"r": "10",
+		"edges": [
+			123,
+			23,
+			108
+		],
+		"type": "Hallway59",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 123,
+		"x": 1137,
+		"y": 645,
+		"r": "10",
+		"edges": [
+			124,
+			22,
+			122
+		],
+		"type": "Hallway60",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 124,
+		"x": 1150,
+		"y": 754,
+		"r": "10",
+		"edges": [
+			99,
+			21,
+			125,
+			123
+		],
+		"type": "Hallway61",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 125,
+		"x": 1179,
+		"y": 860,
+		"r": "10",
+		"edges": [
+			124,
+			126
+		],
+		"type": "Hallway62",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 126,
+		"x": "1272",
+		"y": 845,
+		"r": "10",
+		"edges": [
+			125,
+			127,
+			24
+		],
+		"type": "Hallway63",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 127,
+		"x": 1417,
+		"y": 831,
+		"r": "10",
+		"edges": [
+			126,
+			129
+		],
+		"type": "Hallway64",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 128,
+		"x": 1417,
+		"y": 731,
+		"r": "10",
+		"edges": [
+			129,
+			30,
+			31
+		],
+		"type": "Hallway65",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 129,
+		"x": 1417,
+		"y": 786,
+		"r": "10",
+		"edges": [
+			127,
+			130,
+			128
+		],
+		"type": "Hallway66",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 130,
+		"x": 1445,
+		"y": 786,
+		"r": "10",
+		"edges": [
+			129,
+			51,
+			32
+		],
+		"type": "Hallway67",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 131,
+		"x": "1272",
+		"y": "1024",
+		"r": "10",
+		"edges": [
+			24,
+			132
+		],
+		"type": "Hallway68",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 132,
+		"x": 888,
+		"y": "1024",
+		"r": "10",
+		"edges": [
+			131,
+			133,
+			25
+		],
+		"type": "Hallway69",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 133,
+		"x": 888,
+		"y": 919,
+		"r": "10",
+		"edges": [
+			132,
+			134,
+			26
+		],
+		"type": "Hallway71",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 134,
+		"x": 853,
+		"y": 919,
+		"r": "10",
+		"edges": [
+			133,
+			135,
+			27
+		],
+		"type": "Hallway72",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 135,
+		"x": 784,
+		"y": 919,
+		"r": "10",
+		"edges": [
+			134,
+			136,
+			28
+		],
+		"type": "Hallway73",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 136,
+		"x": 753,
+		"y": 919,
+		"r": "10",
+		"edges": [
+			135,
+			29
+		],
+		"type": "Hallway74",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	}
+]
