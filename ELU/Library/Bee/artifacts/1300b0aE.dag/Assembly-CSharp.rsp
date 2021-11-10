@@ -322,6 +322,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Controller360.cs"
+"Assets/Scripts/FloorConnection.cs"
 "Assets/Scripts/ImagePass.cs"
 "Assets/Scripts/JsonHelper.cs"
 "Assets/Scripts/MapController.cs"

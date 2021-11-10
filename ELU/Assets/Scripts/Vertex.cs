@@ -17,4 +17,5 @@ public class Vertex
     // for pathfinding
     public float shortestDist = 999999;
     public Vertex parent = null;
+    public int floorIndex;
 }

@@ -18,7 +18,7 @@
 	},
 	{
 		"index": 1,
-		"x": "829",
+		"x": 829,
 		"y": 392,
 		"r": "15",
 		"edges": [
@@ -36,8 +36,8 @@
 	},
 	{
 		"index": 2,
-		"x": "829",
-		"y": "444",
+		"x": 829,
+		"y": 444,
 		"r": "15",
 		"edges": [
 			1
@@ -53,8 +53,8 @@
 	},
 	{
 		"index": 3,
-		"x": "874",
-		"y": "288",
+		"x": 874,
+		"y": 288,
 		"r": "15",
 		"edges": [
 			62
@@ -70,8 +70,8 @@
 	},
 	{
 		"index": 4,
-		"x": "829",
-		"y": "288",
+		"x": 829,
+		"y": 288,
 		"r": "15",
 		"edges": [
 			61
@@ -87,8 +87,8 @@
 	},
 	{
 		"index": 5,
-		"x": "749",
-		"y": "277",
+		"x": 749,
+		"y": 277,
 		"r": "15",
 		"edges": [
 			6
@@ -105,7 +105,7 @@
 	{
 		"index": 6,
 		"x": 667,
-		"y": "277",
+		"y": 277,
 		"r": "15",
 		"edges": [
 			59,
@@ -122,7 +122,7 @@
 	},
 	{
 		"index": 7,
-		"x": "683",
+		"x": 683,
 		"y": 392,
 		"r": "15",
 		"edges": [
@@ -139,7 +139,7 @@
 	},
 	{
 		"index": 8,
-		"x": "511",
+		"x": 511,
 		"y": 392,
 		"r": "15",
 		"edges": [
@@ -176,8 +176,8 @@
 	},
 	{
 		"index": 10,
-		"x": "188",
-		"y": "358",
+		"x": 188,
+		"y": 358,
 		"r": "15",
 		"edges": [
 			50,
@@ -194,8 +194,8 @@
 	},
 	{
 		"index": 11,
-		"x": "344",
-		"y": "333",
+		"x": 344,
+		"y": 333,
 		"r": "15",
 		"edges": [
 			53,
@@ -212,8 +212,8 @@
 	},
 	{
 		"index": 12,
-		"x": "453",
-		"y": "248",
+		"x": 453,
+		"y": 248,
 		"r": "15",
 		"edges": [
 			13
@@ -229,8 +229,8 @@
 	},
 	{
 		"index": 13,
-		"x": "541",
-		"y": "248",
+		"x": 541,
+		"y": 248,
 		"r": "15",
 		"edges": [
 			58,
@@ -247,8 +247,8 @@
 	},
 	{
 		"index": 14,
-		"x": "1389",
-		"y": "238",
+		"x": 1389,
+		"y": 238,
 		"r": "15",
 		"edges": [
 			70
@@ -278,12 +278,12 @@
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "Auditorium Maximum"
 	},
 	{
 		"index": 16,
-		"x": "1389",
-		"y": "558",
+		"x": 1389,
+		"y": 558,
 		"r": "15",
 		"edges": [
 			71
@@ -299,8 +299,8 @@
 	},
 	{
 		"index": 17,
-		"x": "1401",
-		"y": "596",
+		"x": 1401,
+		"y": 596,
 		"r": "15",
 		"edges": [
 			72
@@ -316,8 +316,8 @@
 	},
 	{
 		"index": 18,
-		"x": "1525",
-		"y": "579",
+		"x": 1525,
+		"y": 579,
 		"r": "15",
 		"edges": [
 			72
@@ -333,8 +333,8 @@
 	},
 	{
 		"index": 19,
-		"x": "1525",
-		"y": "661",
+		"x": 1525,
+		"y": 661,
 		"r": "15",
 		"edges": [
 			73
@@ -354,7 +354,7 @@
 		"y": 835,
 		"r": "15",
 		"edges": [
-			100
+			99
 		],
 		"type": "A034",
 		"caution": false,
@@ -367,11 +367,11 @@
 	},
 	{
 		"index": 21,
-		"x": "764",
-		"y": "931",
+		"x": 764,
+		"y": 931,
 		"r": "15",
 		"edges": [
-			100
+			99
 		],
 		"type": "A018",
 		"caution": false,
@@ -384,8 +384,8 @@
 	},
 	{
 		"index": 22,
-		"x": "861",
-		"y": "710",
+		"x": 861,
+		"y": 710,
 		"r": "15",
 		"edges": [
 			86
@@ -401,8 +401,8 @@
 	},
 	{
 		"index": 23,
-		"x": "577",
-		"y": "558",
+		"x": 577,
+		"y": 558,
 		"r": "15",
 		"edges": [
 			81
@@ -418,11 +418,11 @@
 	},
 	{
 		"index": 24,
-		"x": "842",
-		"y": "504",
+		"x": 842,
+		"y": 504,
 		"r": "15",
 		"edges": [
-			104
+			103
 		],
 		"type": "A041",
 		"caution": false,
@@ -435,8 +435,8 @@
 	},
 	{
 		"index": 25,
-		"x": "1483",
-		"y": "1010",
+		"x": 1483,
+		"y": 1010,
 		"r": "15",
 		"edges": [
 			80
@@ -453,7 +453,7 @@
 	{
 		"index": 26,
 		"x": 989,
-		"y": "333",
+		"y": 333,
 		"r": "15",
 		"edges": [
 			63
@@ -469,8 +469,8 @@
 	},
 	{
 		"index": 27,
-		"x": "764",
-		"y": "670",
+		"x": 764,
+		"y": 670,
 		"r": "15",
 		"edges": [
 			86,
@@ -487,11 +487,11 @@
 	},
 	{
 		"index": 28,
-		"x": "874",
+		"x": 874,
 		"y": 835,
 		"r": "15",
 		"edges": [
-			101
+			100
 		],
 		"type": "A045",
 		"caution": false,
@@ -504,12 +504,13 @@
 	},
 	{
 		"index": 29,
-		"x": "1223",
-		"y": "905",
+		"x": 1223,
+		"y": 905,
 		"r": "15",
 		"edges": [
-			90,
-			77
+			89,
+			77,
+			106
 		],
 		"type": "A046",
 		"caution": false,
@@ -522,7 +523,7 @@
 	},
 	{
 		"index": 30,
-		"x": "1525",
+		"x": 1525,
 		"y": 783,
 		"r": "15",
 		"edges": [
@@ -556,8 +557,8 @@
 	},
 	{
 		"index": 32,
-		"x": "1525",
-		"y": "920",
+		"x": 1525,
+		"y": 920,
 		"r": "15",
 		"edges": [
 			79
@@ -574,14 +575,14 @@
 	{
 		"index": 33,
 		"x": 649,
-		"y": "920",
+		"y": 920,
 		"r": "15",
 		"edges": [
-			95,
-			91,
-			98
+			94,
+			90,
+			97
 		],
-		"type": "Canteen",
+		"type": "Cafe",
 		"caution": false,
 		"room": true,
 		"restroom": false,
@@ -596,7 +597,7 @@
 		"y": 835,
 		"r": "15",
 		"edges": [
-			91
+			90
 		],
 		"type": "WC4",
 		"caution": false,
@@ -609,11 +610,11 @@
 	},
 	{
 		"index": 35,
-		"x": "541",
+		"x": 541,
 		"y": 835,
 		"r": "15",
 		"edges": [
-			92
+			91
 		],
 		"type": "WC5",
 		"caution": false,
@@ -633,12 +634,12 @@
 			66,
 			67
 		],
-		"type": "WC6",
+		"type": "Elevator0",
 		"caution": false,
 		"room": false,
-		"restroom": true,
+		"restroom": false,
 		"stairs": false,
-		"elevator": false,
+		"elevator": true,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -654,8 +655,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -672,8 +673,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -689,8 +690,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -707,8 +708,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -724,8 +725,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -741,14 +742,14 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
 	{
 		"index": 43,
-		"x": "1525",
+		"x": 1525,
 		"y": 1067,
 		"r": "15",
 		"edges": [
@@ -758,25 +759,26 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
 	{
 		"index": 44,
-		"x": 998,
+		"x": 1001,
 		"y": 881,
 		"r": "15",
 		"edges": [
-			88
+			105,
+			106
 		],
 		"type": "Stairs8",
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -787,21 +789,21 @@
 		"r": "15",
 		"edges": [
 			88,
-			89
+			104
 		],
 		"type": "Stairs9",
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
 	{
 		"index": 46,
 		"x": 1193,
-		"y": "504",
+		"y": 504,
 		"r": "15",
 		"edges": [
 			68
@@ -810,8 +812,8 @@
 		"caution": false,
 		"room": false,
 		"restroom": false,
-		"stairs": false,
-		"elevator": true,
+		"stairs": true,
+		"elevator": false,
 		"wheelchair": false,
 		"message": ""
 	},
@@ -873,7 +875,7 @@
 	},
 	{
 		"index": 50,
-		"x": "188",
+		"x": 188,
 		"y": 425,
 		"r": "10",
 		"edges": [
@@ -892,7 +894,7 @@
 	{
 		"index": 51,
 		"x": 223,
-		"y": "358",
+		"y": 358,
 		"r": "10",
 		"edges": [
 			10,
@@ -910,7 +912,7 @@
 	{
 		"index": 52,
 		"x": 223,
-		"y": "333",
+		"y": 333,
 		"r": "10",
 		"edges": [
 			51,
@@ -928,7 +930,7 @@
 	{
 		"index": 53,
 		"x": 295,
-		"y": "333",
+		"y": 333,
 		"r": "10",
 		"edges": [
 			52,
@@ -947,7 +949,7 @@
 	{
 		"index": 54,
 		"x": 408,
-		"y": "333",
+		"y": 333,
 		"r": "10",
 		"edges": [
 			11,
@@ -1002,7 +1004,7 @@
 	},
 	{
 		"index": 57,
-		"x": "511",
+		"x": 511,
 		"y": 343,
 		"r": "10",
 		"edges": [
@@ -1021,7 +1023,7 @@
 	},
 	{
 		"index": 58,
-		"x": "541",
+		"x": 541,
 		"y": 343,
 		"r": "10",
 		"edges": [
@@ -1059,7 +1061,7 @@
 	},
 	{
 		"index": 60,
-		"x": "683",
+		"x": 683,
 		"y": 343,
 		"r": "10",
 		"edges": [
@@ -1078,7 +1080,7 @@
 	},
 	{
 		"index": 61,
-		"x": "829",
+		"x": 829,
 		"y": 343,
 		"r": "10",
 		"edges": [
@@ -1098,7 +1100,7 @@
 	},
 	{
 		"index": 62,
-		"x": "874",
+		"x": 874,
 		"y": 343,
 		"r": "10",
 		"edges": [
@@ -1211,7 +1213,7 @@
 	{
 		"index": 68,
 		"x": 1259,
-		"y": "504",
+		"y": 504,
 		"r": "10",
 		"edges": [
 			15,
@@ -1230,7 +1232,7 @@
 	{
 		"index": 69,
 		"x": 1449,
-		"y": "504",
+		"y": 504,
 		"r": "10",
 		"edges": [
 			70,
@@ -1248,7 +1250,7 @@
 	{
 		"index": 70,
 		"x": 1449,
-		"y": "238",
+		"y": 238,
 		"r": "10",
 		"edges": [
 			69,
@@ -1285,12 +1287,13 @@
 	{
 		"index": 72,
 		"x": 1449,
-		"y": "579",
+		"y": 579,
 		"r": "10",
 		"edges": [
 			17,
 			71,
-			18
+			18,
+			73
 		],
 		"type": "hallway25",
 		"caution": false,
@@ -1304,11 +1307,12 @@
 	{
 		"index": 73,
 		"x": 1449,
-		"y": "661",
+		"y": 661,
 		"r": "10",
 		"edges": [
 			19,
-			74
+			74,
+			72
 		],
 		"type": "hallway26",
 		"caution": false,
@@ -1344,7 +1348,7 @@
 		"y": 844,
 		"r": "10",
 		"edges": [
-			102,
+			101,
 			31,
 			74,
 			76
@@ -1379,12 +1383,12 @@
 	{
 		"index": 77,
 		"x": 1370,
-		"y": "905",
+		"y": 905,
 		"r": "10",
 		"edges": [
 			29,
 			41,
-			102,
+			101,
 			78
 		],
 		"type": "hallway30",
@@ -1417,7 +1421,7 @@
 	},
 	{
 		"index": 79,
-		"x": "1525",
+		"x": 1525,
 		"y": 946,
 		"r": "10",
 		"edges": [
@@ -1436,8 +1440,8 @@
 	},
 	{
 		"index": 80,
-		"x": "1525",
-		"y": "1010",
+		"x": 1525,
+		"y": 1010,
 		"r": "10",
 		"edges": [
 			79,
@@ -1455,8 +1459,8 @@
 	},
 	{
 		"index": 81,
-		"x": "577",
-		"y": "504",
+		"x": 577,
+		"y": 504,
 		"r": "10",
 		"edges": [
 			82,
@@ -1475,10 +1479,10 @@
 	{
 		"index": 82,
 		"x": 429,
-		"y": "504",
+		"y": 504,
 		"r": "10",
 		"edges": [
-			93,
+			92,
 			40,
 			81
 		],
@@ -1494,7 +1498,7 @@
 	{
 		"index": 83,
 		"x": 632,
-		"y": "504",
+		"y": 504,
 		"r": "10",
 		"edges": [
 			81,
@@ -1512,11 +1516,11 @@
 	{
 		"index": 84,
 		"x": 632,
-		"y": "670",
+		"y": 670,
 		"r": "10",
 		"edges": [
 			83,
-			94,
+			93,
 			27
 		],
 		"type": "hallway37",
@@ -1531,12 +1535,12 @@
 	{
 		"index": 85,
 		"x": 930,
-		"y": "670",
+		"y": 670,
 		"r": "10",
 		"edges": [
 			87,
 			86,
-			104
+			103
 		],
 		"type": "hallway38",
 		"caution": false,
@@ -1549,8 +1553,8 @@
 	},
 	{
 		"index": 86,
-		"x": "861",
-		"y": "670",
+		"x": 861,
+		"y": 670,
 		"r": "10",
 		"edges": [
 			85,
@@ -1572,9 +1576,9 @@
 		"y": 881,
 		"r": "10",
 		"edges": [
-			101,
-			88,
-			85
+			100,
+			85,
+			105
 		],
 		"type": "hallway40",
 		"caution": false,
@@ -1588,30 +1592,11 @@
 	{
 		"index": 88,
 		"x": 959,
-		"y": 881,
-		"r": "10",
-		"edges": [
-			87,
-			44,
-			45
-		],
-		"type": "hallway41",
-		"caution": false,
-		"room": false,
-		"restroom": false,
-		"stairs": false,
-		"elevator": false,
-		"wheelchair": false,
-		"message": ""
-	},
-	{
-		"index": 89,
-		"x": 959,
-		"y": "1010",
+		"y": 1002,
 		"r": "10",
 		"edges": [
 			45,
-			90
+			89
 		],
 		"type": "hallway42",
 		"caution": false,
@@ -1623,12 +1608,12 @@
 		"message": ""
 	},
 	{
-		"index": 90,
-		"x": "1223",
-		"y": "1010",
+		"index": 89,
+		"x": 1223,
+		"y": 1002,
 		"r": "10",
 		"edges": [
-			89,
+			88,
 			29
 		],
 		"type": "hallway43",
@@ -1641,13 +1626,13 @@
 		"message": ""
 	},
 	{
-		"index": 91,
+		"index": 90,
 		"x": 562,
-		"y": "920",
+		"y": 920,
 		"r": "10",
 		"edges": [
 			33,
-			92,
+			91,
 			34
 		],
 		"type": "hallway44",
@@ -1660,12 +1645,12 @@
 		"message": ""
 	},
 	{
-		"index": 92,
-		"x": "541",
-		"y": "920",
+		"index": 91,
+		"x": 541,
+		"y": 920,
 		"r": "10",
 		"edges": [
-			91,
+			90,
 			35
 		],
 		"type": "hallway45",
@@ -1678,8 +1663,8 @@
 		"message": ""
 	},
 	{
-		"index": 93,
-		"x": "330",
+		"index": 92,
+		"x": 330,
 		"y": 679,
 		"r": "15",
 		"edges": [
@@ -1695,13 +1680,13 @@
 		"message": ""
 	},
 	{
-		"index": 94,
+		"index": 93,
 		"x": 632,
 		"y": 856,
 		"r": "10",
 		"edges": [
 			84,
-			95
+			94
 		],
 		"type": "hallway47",
 		"caution": false,
@@ -1713,14 +1698,14 @@
 		"message": ""
 	},
 	{
-		"index": 95,
+		"index": 94,
 		"x": 649,
 		"y": 856,
 		"r": "10",
 		"edges": [
-			94,
+			93,
 			33,
-			96
+			95
 		],
 		"type": "hallway48",
 		"caution": false,
@@ -1732,14 +1717,14 @@
 		"message": ""
 	},
 	{
-		"index": 96,
+		"index": 95,
 		"x": 696,
 		"y": 881,
 		"r": "10",
 		"edges": [
-			95,
-			98,
-			97
+			94,
+			97,
+			96
 		],
 		"type": "hallway49",
 		"caution": false,
@@ -1751,14 +1736,14 @@
 		"message": ""
 	},
 	{
-		"index": 97,
+		"index": 96,
 		"x": 733,
 		"y": 881,
 		"r": "10",
 		"edges": [
-			99,
-			96,
-			100
+			98,
+			95,
+			99
 		],
 		"type": "hallway50",
 		"caution": false,
@@ -1770,14 +1755,14 @@
 		"message": ""
 	},
 	{
-		"index": 98,
+		"index": 97,
 		"x": 696,
-		"y": "920",
+		"y": 920,
 		"r": "10",
 		"edges": [
-			96,
+			95,
 			33,
-			99
+			98
 		],
 		"type": "hallway51",
 		"caution": false,
@@ -1789,13 +1774,13 @@
 		"message": ""
 	},
 	{
-		"index": 99,
+		"index": 98,
 		"x": 733,
-		"y": "920",
+		"y": 920,
 		"r": "10",
 		"edges": [
-			98,
-			97
+			97,
+			96
 		],
 		"type": "hallway52",
 		"caution": false,
@@ -1807,15 +1792,15 @@
 		"message": ""
 	},
 	{
-		"index": 100,
-		"x": "764",
+		"index": 99,
+		"x": 764,
 		"y": 881,
 		"r": "10",
 		"edges": [
-			97,
+			96,
 			20,
 			21,
-			101
+			100
 		],
 		"type": "hallway53",
 		"caution": false,
@@ -1827,12 +1812,12 @@
 		"message": ""
 	},
 	{
-		"index": 101,
-		"x": "874",
+		"index": 100,
+		"x": 874,
 		"y": 881,
 		"r": "10",
 		"edges": [
-			100,
+			99,
 			28,
 			87
 		],
@@ -1846,13 +1831,13 @@
 		"message": ""
 	},
 	{
-		"index": 102,
+		"index": 101,
 		"x": 1370,
 		"y": 835,
 		"r": "10",
 		"edges": [
 			77,
-			103,
+			102,
 			75
 		],
 		"type": "hallway55",
@@ -1865,12 +1850,12 @@
 		"message": ""
 	},
 	{
-		"index": 103,
+		"index": 102,
 		"x": 1348,
 		"y": 835,
 		"r": "15",
 		"edges": [
-			102
+			101
 		],
 		"type": "Ramp",
 		"caution": false,
@@ -1882,15 +1867,70 @@
 		"message": ""
 	},
 	{
-		"index": 104,
+		"index": 103,
 		"x": 930,
-		"y": "504",
+		"y": 504,
 		"r": "10",
 		"edges": [
 			85,
 			24
 		],
 		"type": "hallway57",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 104,
+		"x": 959,
+		"y": 917,
+		"r": "10",
+		"edges": [
+			45,
+			105
+		],
+		"type": "hallway59",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 105,
+		"x": 959,
+		"y": 881,
+		"r": "10",
+		"edges": [
+			104,
+			44,
+			87
+		],
+		"type": "hallway60",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 106,
+		"x": 1001,
+		"y": 849,
+		"r": "10",
+		"edges": [
+			44,
+			29
+		],
+		"type": "hallway61",
 		"caution": false,
 		"room": false,
 		"restroom": false,

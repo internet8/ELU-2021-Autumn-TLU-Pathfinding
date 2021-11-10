@@ -14,10 +14,12 @@ public class UI : MonoBehaviour
     public GameObject searchResultObj, searchBoxObj;
     public GameObject searchCanvas, mapCanvas, searchBox;
     private TMP_InputField search;
-    public TMP_Text fromText, toText;
+    public TMP_Text fromText, toText, floorText;
     private Pathfinding pathfinding;
     private int fromIndex = -1;
     private int toIndex = -1;
+    private int fromFloor = -1;
+    private int toFloor = -1;
     private string searchLastValue = "";
     private bool fromSearch = true;
 
@@ -31,8 +33,8 @@ public class UI : MonoBehaviour
 
     public void ShowPath () {
         CloseSearchBox();
-        if (fromIndex > -1 && toIndex > -1 && fromIndex != toIndex) {
-            pathfinding.FindPath(fromIndex, toIndex);
+        if (fromIndex > -1 && toIndex > -1) {
+            pathfinding.FindPath(fromFloor, toFloor, fromIndex, toIndex);
             searchCanvas.SetActive(false);
             mapCanvas.SetActive(true);
         } else if (fromIndex > -1) {
@@ -51,32 +53,39 @@ public class UI : MonoBehaviour
         DeleteSearchResults();
         string input = search.text;
         int index = 0;
-        foreach (Vertex v in pathfinding.graph)
-        {
-            if (v.type.Length >= input.Length) {
-                if (v.type.Substring(0, input.Length).ToLower().Equals(input.ToLower())) {
-                    var button = (GameObject)Instantiate(Resources.Load("SearchResultButton", typeof(GameObject))) as GameObject;
-                    if (button == null) continue;
-                    button.transform.SetParent (searchResultObj.transform);
-                    button.transform.localScale = Vector3.one;
-                    button.transform.localRotation = Quaternion.Euler (Vector3.zero);
-                    button.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(index, index, 0);
-                    button.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = v.type;
-                    button.GetComponent<Button>().onClick.AddListener(delegate { 
-                        if (b) { 
-                            fromIndex = v.index;
-                            fromText.text = v.type;
-                            CloseSearch();
-                        } else {
-                            toIndex = v.index;
-                            toText.text = v.type;
-                            CloseSearch();
-                        }
-                        DeleteSearchResults();
-                    });
-                    index++;
+        int floorIndex = 0;
+        foreach (Vertex[] vertices in pathfinding.graphs) {
+            foreach (Vertex v in vertices)
+            {
+                if (v.type.Length >= input.Length) {
+                    if (v.type.Substring(0, input.Length).ToLower().Equals(input.ToLower()) && v.room) {
+                        var button = (GameObject)Instantiate(Resources.Load("SearchResultButton", typeof(GameObject))) as GameObject;
+                        if (button == null) continue;
+                        button.transform.SetParent (searchResultObj.transform);
+                        button.transform.localScale = Vector3.one;
+                        button.transform.localRotation = Quaternion.Euler (Vector3.zero);
+                        button.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(index, index, 0);
+                        button.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = v.type;
+                        v.floorIndex = floorIndex;
+                        button.GetComponent<Button>().onClick.AddListener(delegate { 
+                            if (b) { 
+                                fromFloor = v.floorIndex;
+                                fromIndex = v.index;
+                                fromText.text = v.type;
+                                CloseSearch();
+                            } else {
+                                toFloor = v.floorIndex;
+                                toIndex = v.index;
+                                toText.text = v.type;
+                                CloseSearch();
+                            }
+                            DeleteSearchResults();
+                        });
+                        index++;
+                    }
                 }
             }
+            floorIndex++;
         }
     }
 
@@ -97,6 +106,8 @@ public class UI : MonoBehaviour
         searchCanvas.SetActive(true);
         mapCanvas.SetActive(false);
         searchBox.SetActive(false);
+        search.Select();
+        search.ActivateInputField();
     }
 
     public void CloseSearchBox () {
@@ -124,36 +135,42 @@ public class UI : MonoBehaviour
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton0;
                 SelectedColor(floorButton0);
+                floorText.text = "Astra/Silva 0th floor";
                 break;
             case 1:
                 spriteRenderer.sprite = floor1;
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton1;
                 SelectedColor(floorButton1);
+                floorText.text = "Astra/Silva 1th floor";
                 break;
             case 2:
                 spriteRenderer.sprite = floor2;
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton2;
                 SelectedColor(floorButton2);
+                floorText.text = "Astra/Silva 2nd floor";
                 break;
             case 3:
                 spriteRenderer.sprite = floor3;
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton3;
                 SelectedColor(floorButton3);
+                floorText.text = "Astra/Silva 3rd floor";
                 break;
             case 4:
                 spriteRenderer.sprite = floor4;
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton4;
                 SelectedColor(floorButton4);
+                floorText.text = "Astra/Silva 4th floor";
                 break;
             case 5:
                 spriteRenderer.sprite = floor5;
                 UnSelectedColor(currentFloorButton);
                 currentFloorButton = floorButton5;
                 SelectedColor(floorButton5);
+                floorText.text = "Astra/Silva 5th floor";
                 break;
         }
     }

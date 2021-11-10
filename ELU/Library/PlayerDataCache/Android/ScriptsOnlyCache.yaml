@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Shadow
@@ -98,6 +99,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5738}
     - Class: 114
       Script: {instanceID: 6026}
+    - Class: 114
+      Script: {instanceID: 6056}
     - Class: 114
       Script: {instanceID: 6134}
     - Class: 114
@@ -311,7 +314,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 319cf8f7babe6a7decde1f48b6b326af
+      Hash: f0ec0432735f6c09413abf3eeb5ddae8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pathfinding
@@ -731,7 +734,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: cecabc09c63f4770940dc203cddc6ffe
+      Hash: 638e26f6869e521a3a30d6cbf8912658
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI
