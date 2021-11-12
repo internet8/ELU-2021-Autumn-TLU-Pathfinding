@@ -482,8 +482,8 @@
 	},
 	{
 		"index": 28,
-		"x": 1033,
-		"y": 673,
+		"x": "1033",
+		"y": "673",
 		"r": "15",
 		"edges": [
 			60,
@@ -491,7 +491,7 @@
 		],
 		"type": "Researchers' Forum",
 		"caution": false,
-		"room": true,
+		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,

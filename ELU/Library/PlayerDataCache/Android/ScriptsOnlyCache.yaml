@@ -92,21 +92,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4764}
     - Class: 114
-      Script: {instanceID: 5290}
+      Script: {instanceID: 5292}
     - Class: 114
-      Script: {instanceID: 5436}
+      Script: {instanceID: 5438}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 6058}
     - Class: 114
-      Script: {instanceID: 6134}
+      Script: {instanceID: 6136}
     - Class: 114
-      Script: {instanceID: 6520}
+      Script: {instanceID: 6522}
     - Class: 114
-      Script: {instanceID: 6730}
+      Script: {instanceID: 6732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

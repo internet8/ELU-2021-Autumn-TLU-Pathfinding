@@ -7,7 +7,7 @@ using TMPro;
 public class UI : MonoBehaviour
 {
     public Sprite floor0, floor1, floor2, floor3, floor4, floor5;
-    public Button floorButton0, floorButton1, floorButton2, floorButton3, floorButton4, floorButton5;
+    public Button floorButton0, floorButton1, floorButton2, floorButton3, floorButton4, floorButton5, shortestButton, noObstaclesButton;
     private Button currentFloorButton;
     private SpriteRenderer spriteRenderer;
     public GameObject floorObj;
@@ -126,6 +126,22 @@ public class UI : MonoBehaviour
     public void OnClicked(Button button)
     {
         print(button.name);
+    }
+
+    public void SetToShortest () {
+        if (!pathfinding.shortestPath) {
+            noObstaclesButton.GetComponent<Image>().enabled = false;
+            shortestButton.GetComponent<Image>().enabled = true;
+            pathfinding.shortestPath = true;
+        }
+    }
+
+    public void SetToNoObstacles () {
+        if (pathfinding.shortestPath) {
+            noObstaclesButton.GetComponent<Image>().enabled = true;
+            shortestButton.GetComponent<Image>().enabled = false;
+            pathfinding.shortestPath = false;
+        }
     }
 
     public void SwitchMap (int floor) {

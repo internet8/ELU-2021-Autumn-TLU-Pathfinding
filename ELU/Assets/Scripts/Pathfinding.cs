@@ -18,6 +18,8 @@ public class Pathfinding : MonoBehaviour
     private Queue<Vertex> queue = new Queue<Vertex>();
     public Texture2D startIcon, endIcon;
     private FloorConnection[] floorConnections;
+    public bool shortestPath = true;
+    private bool noPathError = false;
 
     void Start()
     {
@@ -49,7 +51,6 @@ public class Pathfinding : MonoBehaviour
         floorJSON = (TextAsset)Resources.Load("AstraSilva5Aligned");
         json = floorJSON.text;
         graphs.Add(JsonHelper.getJsonArray<Vertex>(json));
-        Debug.Log(graphs.Count);
         // connecting graphs
         FloorConnection A002Ramp = new FloorConnection(false, false, true, new int[] { 102, 82, -1, -1, -1, -1 });
         FloorConnection A002Stairs = new FloorConnection(true, false, false, new int[] { 41, 72, -1, -1, -1, -1 });
@@ -67,6 +68,7 @@ public class Pathfinding : MonoBehaviour
     }
 
     public void FindPath (int floorFrom, int floorTo, int indexFrom, int indexTo) {
+        noPathError = false;
         RestoreDefaultTextures();
         if (floorFrom == floorTo) {
             Texture2D floorTex = new Texture2D(originalFloors[floorFrom].width, originalFloors[floorFrom].height);
@@ -89,9 +91,11 @@ public class Pathfinding : MonoBehaviour
             // finding paths
             FloorConnection fc = GetFloorConnection(floorFrom, floorTo, indexFrom, indexTo);
             toFloorTex = GetFloorWithPath(graphs[floorTo], graphs[floorTo][fc.connectionArray[floorTo]], graphs[floorTo][indexTo], toFloorTex, new Color(0.7f, 0.1f, 0.2f));
-            ApplyNewFloorTextures(floorTo, Sprite.Create(toFloorTex, new Rect(0.0f, 0.0f, toFloorTex.width, toFloorTex.height), new Vector2(0.5f, 0.5f), 1.0f));
             floorFromTex = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][fc.connectionArray[floorFrom]], floorFromTex, new Color(0.7f, 0.1f, 0.2f));
-            ApplyNewFloorTextures(floorFrom, Sprite.Create(floorFromTex, new Rect(0.0f, 0.0f, floorFromTex.width, floorFromTex.height), new Vector2(0.5f, 0.5f), 1.0f));
+            if (!noPathError) {
+                ApplyNewFloorTextures(floorFrom, Sprite.Create(floorFromTex, new Rect(0.0f, 0.0f, floorFromTex.width, floorFromTex.height), new Vector2(0.5f, 0.5f), 1.0f));
+                ApplyNewFloorTextures(floorTo, Sprite.Create(toFloorTex, new Rect(0.0f, 0.0f, toFloorTex.width, toFloorTex.height), new Vector2(0.5f, 0.5f), 1.0f));
+            }
             //floorFromTex = GetFloorWithPath(graph, graph[from], graph[to], floorFromTex, new Color(0.7f, 0.1f, 0.2f)); // new Color(0.72f, 0.07f, 0.2f)
             // applying the returned texture
             //spriteRenderer.sprite = Sprite.Create(floorFromTex, new Rect(0.0f, 0.0f, floorFromTex.width, floorFromTex.height), new Vector2(0.5f, 0.5f), 1.0f);
@@ -145,8 +149,13 @@ public class Pathfinding : MonoBehaviour
                 Vector2 to2 = new Vector2(graphs[floorTo][fc.connectionArray[floorTo]].x, graphs[floorTo][fc.connectionArray[floorTo]].y);
                 float dist = Vector2.Distance(from, to) + Vector2.Distance(from2, to2);
                 if (dist < shortestDist) {
-                    shortestDist = dist;
-                    result = fc;
+                    if (shortestPath) {
+                        shortestDist = dist;
+                        result = fc;
+                    } else if (fc.elevator || fc.ramp) {
+                        shortestDist = dist;
+                        result = fc;
+                    }
                 }
             }
         }
@@ -181,13 +190,18 @@ public class Pathfinding : MonoBehaviour
         Dijkstra(startVertex, endVertex, graph);
         // drawing the path recursively from the endVertex to the startVertex through parents
         Vertex currentDrawVertex = endVertex;
-        RecursiveDraw(endVertex, floor, color, 0, graph);
-        textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 22, 22, floor, Color.black);
-        textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
-        textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 22, 22, floor, Color.black);
-        textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
-        textureEditor.DrawImage(startVertex.x, floor.height - startVertex.y, floor, startIcon, color);
-        textureEditor.DrawImage(endVertex.x, floor.height - endVertex.y, floor, endIcon, color);
+        if (endVertex.parent != null) { // no path
+            RecursiveDraw(endVertex, floor, color, 0, graph);
+            textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 22, 22, floor, Color.black);
+            textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
+            textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 22, 22, floor, Color.black);
+            textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
+            textureEditor.DrawImage(startVertex.x, floor.height - startVertex.y, floor, startIcon, color);
+            textureEditor.DrawImage(endVertex.x, floor.height - endVertex.y, floor, endIcon, color);
+        } else {
+            noPathError = true;
+            Debug.Log("No path found!");
+        }
         // returning the final texture
         return floor;
     }
@@ -201,21 +215,38 @@ public class Pathfinding : MonoBehaviour
     }
 
     private void Dijkstra (Vertex start, Vertex dest, Vertex[] graph) {
+        int iterations = 0;
         Vertex vertex = start;
         while (queue.Count > 0) {
+            iterations++;
             vertex = queue.Dequeue();
             foreach (int edge in vertex.edges) {
                 Vertex v = graph[edge];
-                // distance from the starting point to the current point
-                float dist = vertex.shortestDist + Vector2.Distance(new Vector2(vertex.x, vertex.y), new Vector2(v.x, v.y));
-                // +3000 distance if the vertex has the room flag, encourages the algorithm to find paths through the hallway
-                dist += v.room ? 3000 : 0;
-                if (v.shortestDist > dist) {
-                    v.parent = vertex;
-                    v.shortestDist = dist;
-                    queue.Enqueue(v);
+                if (!shortestPath) {
+                    if (!v.stairs) {
+                        // distance from the starting point to the current point
+                        float dist = vertex.shortestDist + Vector2.Distance(new Vector2(vertex.x, vertex.y), new Vector2(v.x, v.y));
+                        // +3000 distance if the vertex has the room flag, encourages the algorithm to find paths through the hallway
+                        dist += v.room ? 3000 : 0;
+                        if (v.shortestDist > dist) {
+                            v.parent = vertex;
+                            v.shortestDist = dist;
+                            queue.Enqueue(v);
+                        }
+                    }
+                } else {
+                    // distance from the starting point to the current point
+                    float dist = vertex.shortestDist + Vector2.Distance(new Vector2(vertex.x, vertex.y), new Vector2(v.x, v.y));
+                    // +3000 distance if the vertex has the room flag, encourages the algorithm to find paths through the hallway
+                    dist += v.room ? 3000 : 0;
+                    if (v.shortestDist > dist) {
+                        v.parent = vertex;
+                        v.shortestDist = dist;
+                        queue.Enqueue(v);
+                    }
                 }
             }
         }
+        Debug.Log(iterations);
     }
 }
