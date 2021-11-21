@@ -53,6 +53,10 @@ Shader "Custom/MapStyle"
                 if (pow(pow(0.788 - c.r, 2) + pow(0.788 - c.g, 2) + pow(0.788 - c.b, 2), 0.5) < 0.2) {
                     result = 0.788;
                 }
+                // grey
+                if (pow(pow(0.635 - c.r, 2) + pow(0.635 - c.g, 2) + pow(0.635 - c.b, 2), 0.5) < 0.2) {
+                    result = 0.635;
+                }
                 // dark grey
                 if (pow(pow(0.533 - c.r, 2) + pow(0.533 - c.g, 2) + pow(0.533 - c.b, 2), 0.5) < 0.28) {
                     result = 0.533;

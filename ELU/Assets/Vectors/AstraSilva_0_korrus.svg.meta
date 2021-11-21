@@ -1,0 +1,63 @@
+fileFormatVersion: 2
+guid: 1cdd4476771113748b382b7e218cef5f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  m_SvgType: 0
+  m_TexturedSpriteMeshType: 0
+  m_SvgPixelsPerUnit: 100
+  m_GradientResolution: 64
+  m_Alignment: 0
+  m_CustomPivot: {x: 0, y: 0}
+  m_GeneratePhysicsShape: 0
+  m_ViewportOptions: 0
+  m_PreserveViewport: 0
+  m_AdvancedMode: 0
+  m_PredefinedResolutionIndex: 1
+  m_TargetResolution: 1080
+  m_ResolutionMultiplier: 1
+  m_StepDistance: 10
+  m_SamplingStepDistance: 100
+  m_MaxCordDeviationEnabled: 0
+  m_MaxCordDeviation: 1
+  m_MaxTangentAngleEnabled: 0
+  m_MaxTangentAngle: 5
+  m_KeepTextureAspectRatio: 1
+  m_TextureSize: 256
+  m_TextureWidth: 256
+  m_TextureHeight: 256
+  m_WrapMode: 0
+  m_FilterMode: 1
+  m_SampleCount: 4
+  m_PreserveSVGImageAspect: 0
+  m_UseSVGPixelsPerUnit: 0
+  m_SpriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      m_Name: 
+      m_OriginalName: 
+      m_Pivot: {x: 0, y: 0}
+      m_Alignment: 0
+      m_Border: {x: 0, y: 0, z: 0, w: 0}
+      m_Rect:
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_SpriteID: f7d1c516f59de424ab3c2afc9f318728
+      m_RegisterInternalID: 0
+      m_GUID:
+        m_Value0: 0
+        m_Value1: 0
+        m_Value2: 0
+        m_Value3: 0
+    PhysicsOutlines: []
+    m_PrevAlignment: 0
+    m_PrevPivot: {x: 0, y: 0}
+  m_ImportingSprite: {}
+  m_ImportingTexture2D: {}

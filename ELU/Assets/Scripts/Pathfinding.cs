@@ -6,26 +6,20 @@ using System;
 
 public class Pathfinding : MonoBehaviour
 {
-    //public Texture2D originalFloor0, originalFloor1, originalFloor2, originalFloor3, originalFloor4, originalFloor5;
-    //private Texture2D floor0, floor1, floor2, floor3, floor4, floor5;
-    public Texture2D[] originalFloors = new Texture2D[6];
-    public Sprite[] originalSprites = new Sprite[6];
-    private SpriteRenderer spriteRenderer;
-    public GameObject floorObj;
-    private TextureEditor textureEditor;
-    //public Vertex[] graph0, graph1, graph2, graph3, graph4, graph5;
     public List<Vertex[]> graphs = new List<Vertex[]>();
     private Queue<Vertex> queue = new Queue<Vertex>();
-    public Texture2D startIcon, endIcon;
     private FloorConnection[] floorConnections;
     public bool shortestPath = true;
     private bool noPathError = false;
+    public LineRenderer lineRendererFrom;
+    public LineRenderer lineRendererTo;
+    private UI ui;
+    private IconManager iconManager;
 
     void Start()
     {
-        // tex
-        textureEditor = gameObject.GetComponent<TextureEditor>();
-        spriteRenderer = floorObj.GetComponent<SpriteRenderer>();
+        ui = gameObject.GetComponent<UI>();
+        iconManager = gameObject.GetComponent<IconManager>();
         GraphsInit();
     }
 
@@ -71,70 +65,36 @@ public class Pathfinding : MonoBehaviour
         noPathError = false;
         RestoreDefaultTextures();
         if (floorFrom == floorTo) {
-            Texture2D floorTex = new Texture2D(originalFloors[floorFrom].width, originalFloors[floorFrom].height);
-            floorTex.SetPixels(originalFloors[floorFrom].GetPixels());
-            floorTex.Apply();
             ResetGraph(graphs[floorFrom]);
-            floorTex = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][indexTo], floorTex, new Color(0.7f, 0.1f, 0.2f));
-            ApplyNewFloorTextures(floorFrom, Sprite.Create(floorTex, new Rect(0.0f, 0.0f, floorTex.width, floorTex.height), new Vector2(0.5f, 0.5f), 1.0f));
+            List<Vector3> pathNodesFloor = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][indexTo]);
+            if (!noPathError) {
+                lineRendererFrom.positionCount = pathNodesFloor.Count;
+                lineRendererFrom.SetPositions(pathNodesFloor.ToArray());
+            }
         } else {
-            // new textures
-            Texture2D floorFromTex = new Texture2D(originalFloors[floorFrom].width, originalFloors[floorFrom].height);
-            floorFromTex.SetPixels(originalFloors[floorFrom].GetPixels());
-            floorFromTex.Apply();
-            Texture2D toFloorTex = new Texture2D(originalFloors[floorTo].width, originalFloors[floorTo].height);
-            toFloorTex.SetPixels(originalFloors[floorTo].GetPixels());
-            toFloorTex.Apply();
             //new graph
             ResetGraph(graphs[floorFrom]);
             ResetGraph(graphs[floorTo]);
             // finding paths
             FloorConnection fc = GetFloorConnection(floorFrom, floorTo, indexFrom, indexTo);
-            toFloorTex = GetFloorWithPath(graphs[floorTo], graphs[floorTo][fc.connectionArray[floorTo]], graphs[floorTo][indexTo], toFloorTex, new Color(0.7f, 0.1f, 0.2f));
-            floorFromTex = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][fc.connectionArray[floorFrom]], floorFromTex, new Color(0.7f, 0.1f, 0.2f));
+            List<Vector3> pathNodesFloorFrom = GetFloorWithPath(graphs[floorTo], graphs[floorTo][fc.connectionArray[floorTo]], graphs[floorTo][indexTo]);
+            List<Vector3> pathNodesFloorTo = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][fc.connectionArray[floorFrom]]);
             if (!noPathError) {
-                ApplyNewFloorTextures(floorFrom, Sprite.Create(floorFromTex, new Rect(0.0f, 0.0f, floorFromTex.width, floorFromTex.height), new Vector2(0.5f, 0.5f), 1.0f));
-                ApplyNewFloorTextures(floorTo, Sprite.Create(toFloorTex, new Rect(0.0f, 0.0f, toFloorTex.width, toFloorTex.height), new Vector2(0.5f, 0.5f), 1.0f));
+                lineRendererFrom.positionCount = pathNodesFloorFrom.Count;
+                lineRendererFrom.SetPositions(pathNodesFloorFrom.ToArray());
+                lineRendererTo.positionCount = pathNodesFloorTo.Count;
+                lineRendererTo.SetPositions(pathNodesFloorTo.ToArray());
             }
-            //floorFromTex = GetFloorWithPath(graph, graph[from], graph[to], floorFromTex, new Color(0.7f, 0.1f, 0.2f)); // new Color(0.72f, 0.07f, 0.2f)
-            // applying the returned texture
-            //spriteRenderer.sprite = Sprite.Create(floorFromTex, new Rect(0.0f, 0.0f, floorFromTex.width, floorFromTex.height), new Vector2(0.5f, 0.5f), 1.0f);
         }
-    }
-
-    private void ApplyNewFloorTextures (int floorIndex, Sprite floorTex) {
-        UI ui = gameObject.GetComponent<UI>();
-        switch (floorIndex) {
-            case 0:
-                ui.floor0 = floorTex;
-                break;
-            case 1:
-                ui.floor1 = floorTex;
-                break;
-            case 2:
-                ui.floor2 = floorTex;
-                break;
-            case 3:
-                ui.floor3 = floorTex;
-                break;
-            case 4:
-                ui.floor4 = floorTex;
-                break;
-            case 5:
-                ui.floor5 = floorTex;
-                break;
+        if (!noPathError) {
+            ui.showPath = true;
+            ui.SwitchMap(floorFrom);
         }
-        ui.SwitchMap(floorIndex);
     }
 
     public void RestoreDefaultTextures () {
-        UI ui = gameObject.GetComponent<UI>();
-        ui.floor0 = originalSprites[0];
-        ui.floor1 = originalSprites[1];
-        ui.floor2 = originalSprites[2];
-        ui.floor3 = originalSprites[3];
-        ui.floor4 = originalSprites[4];
-        ui.floor5 = originalSprites[5];
+        // remove all line renderers
+        ui.showPath = false;
         ui.SwitchMap(0);
     }
 
@@ -183,35 +143,26 @@ public class Pathfinding : MonoBehaviour
         return result;
     }
 
-    public Texture2D GetFloorWithPath (Vertex[] graph, Vertex startVertex, Vertex endVertex, Texture2D floor, Color color) {
+    public List<Vector3> GetFloorWithPath (Vertex[] graph, Vertex startVertex, Vertex endVertex) {
+        List<Vector3> result = new List<Vector3>();
         // calling dijkstra
         startVertex.shortestDist = 0;
         queue.Enqueue(startVertex);
         Dijkstra(startVertex, endVertex, graph);
-        // drawing the path recursively from the endVertex to the startVertex through parents
+        // finding vertices in path
         Vertex currentDrawVertex = endVertex;
-        if (endVertex.parent != null) { // no path
-            RecursiveDraw(endVertex, floor, color, 0, graph);
-            textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 22, 22, floor, Color.black);
-            textureEditor.DrawEllipse(startVertex.x, floor.height - startVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
-            textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 22, 22, floor, Color.black);
-            textureEditor.DrawEllipse(endVertex.x, floor.height - endVertex.y, 20, 20, floor, new Color(0.6f, 0.6f, 0.6f));
-            textureEditor.DrawImage(startVertex.x, floor.height - startVertex.y, floor, startIcon, color);
-            textureEditor.DrawImage(endVertex.x, floor.height - endVertex.y, floor, endIcon, color);
+        if (endVertex.parent != null) {
+            int count = 0;
+            while (count < graph.Length && currentDrawVertex != null) {
+                result.Add(new Vector3(currentDrawVertex.x, 1191 - currentDrawVertex.y, 0)); // 1191 is the high of the floor image
+                currentDrawVertex = currentDrawVertex.parent;
+                count++;
+            }
         } else {
             noPathError = true;
             Debug.Log("No path found!");
         }
-        // returning the final texture
-        return floor;
-    }
-
-    private void RecursiveDraw (Vertex vertex, Texture2D floor, Color color, int count, Vertex[] graph) {
-        if (count < graph.Length && vertex.parent != null) {
-            textureEditor.DrawLine(vertex.x, floor.height - vertex.y, vertex.parent.x, floor.height - vertex.parent.y, floor, Color.black, 8, 0);
-            textureEditor.DrawLine(vertex.x, floor.height - vertex.y, vertex.parent.x, floor.height - vertex.parent.y, floor, color, 6, 0);
-            RecursiveDraw(vertex.parent, floor, color, count++, graph);
-        }
+        return result;
     }
 
     private void Dijkstra (Vertex start, Vertex dest, Vertex[] graph) {

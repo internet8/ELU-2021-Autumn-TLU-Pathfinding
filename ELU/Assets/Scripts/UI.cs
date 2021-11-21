@@ -6,8 +6,11 @@ using TMPro;
 
 public class UI : MonoBehaviour
 {
-    public Sprite floor0, floor1, floor2, floor3, floor4, floor5;
-    public Button floorButton0, floorButton1, floorButton2, floorButton3, floorButton4, floorButton5, shortestButton, noObstaclesButton;
+    //public Sprite floor0, floor1, floor2, floor3, floor4, floor5;
+    public Sprite[] floors = new Sprite[6];
+    public Button shortestButton, noObstaclesButton;
+    public Button[] floorButtons = new Button[6];
+    public GameObject pathFrom, pathTo;
     private Button currentFloorButton;
     private SpriteRenderer spriteRenderer;
     public GameObject floorObj;
@@ -22,13 +25,16 @@ public class UI : MonoBehaviour
     private int toFloor = -1;
     private string searchLastValue = "";
     private bool fromSearch = true;
+    public bool showPath = false;
 
     void Start()
     {
-        currentFloorButton = floorButton1;
+        currentFloorButton = floorButtons[1];
         spriteRenderer = floorObj.GetComponent<SpriteRenderer>();
         pathfinding = gameObject.GetComponent<Pathfinding>();
         search = searchBoxObj.GetComponent<TMP_InputField>();
+        SwitchMap(0);
+        SetToShortest();
     }
 
     public void ShowPath () {
@@ -145,50 +151,18 @@ public class UI : MonoBehaviour
     }
 
     public void SwitchMap (int floor) {
-        switch (floor) {
-            case 0:
-                spriteRenderer.sprite = floor0;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton0;
-                SelectedColor(floorButton0);
-                floorText.text = "Astra/Silva 0th floor";
-                break;
-            case 1:
-                spriteRenderer.sprite = floor1;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton1;
-                SelectedColor(floorButton1);
-                floorText.text = "Astra/Silva 1th floor";
-                break;
-            case 2:
-                spriteRenderer.sprite = floor2;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton2;
-                SelectedColor(floorButton2);
-                floorText.text = "Astra/Silva 2nd floor";
-                break;
-            case 3:
-                spriteRenderer.sprite = floor3;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton3;
-                SelectedColor(floorButton3);
-                floorText.text = "Astra/Silva 3rd floor";
-                break;
-            case 4:
-                spriteRenderer.sprite = floor4;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton4;
-                SelectedColor(floorButton4);
-                floorText.text = "Astra/Silva 4th floor";
-                break;
-            case 5:
-                spriteRenderer.sprite = floor5;
-                UnSelectedColor(currentFloorButton);
-                currentFloorButton = floorButton5;
-                SelectedColor(floorButton5);
-                floorText.text = "Astra/Silva 5th floor";
-                break;
+        pathFrom.SetActive(false);
+        pathTo.SetActive(false);
+        if (fromFloor == floor && showPath) {
+            pathTo.SetActive(true);
+        } else if (toFloor == floor && showPath) {
+            pathFrom.SetActive(true);
         }
+        spriteRenderer.sprite = floors[floor];
+        UnSelectedColor(currentFloorButton);
+        currentFloorButton = floorButtons[floor];
+        SelectedColor(floorButtons[floor]);
+        floorText.text = "Astra/Silva " + floor + "th floor";
     }
 
     private void SelectedColor (Button button) {
