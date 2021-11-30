@@ -383,13 +383,13 @@
 			64
 		],
 		"type": "A406",
-		"caution": false,
+		"caution": true,
 		"room": true,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "Can enter through the fire escape door from the study center (requires previous arrangement)."
 	},
 	{
 		"index": 23,
@@ -1105,13 +1105,13 @@
 			22
 		],
 		"type": "Stairs18",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": true,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "Not accessible with a wheelchair."
 	},
 	{
 		"index": 65,
@@ -1372,13 +1372,13 @@
 			112
 		],
 		"type": "hallway9",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 79,
@@ -1400,8 +1400,8 @@
 	},
 	{
 		"index": 80,
-		"x": 578,
-		"y": 510,
+		"x": "578",
+		"y": "510",
 		"r": "10",
 		"edges": [
 			79,
@@ -1409,13 +1409,13 @@
 			81
 		],
 		"type": "hallway11",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 81,
@@ -2069,13 +2069,13 @@
 			120
 		],
 		"type": "hallway47",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 116,
@@ -2331,8 +2331,8 @@
 	},
 	{
 		"index": 129,
-		"x": "335",
-		"y": "846",
+		"x": 335,
+		"y": 846,
 		"r": "15",
 		"edges": [
 			90
@@ -2402,5 +2402,35 @@
 		"elevator": false,
 		"wheelchair": false,
 		"message": ""
+	},
+	{
+		"index": 133,
+		"x": 1465,
+		"y": 945,
+		"r": "10",
+		"edges": [],
+		"type": "default133",
+		"caution": true,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "Only accessible with the staff elevator (requires access card)."
+	},
+	{
+		"index": 134,
+		"x": 1037,
+		"y": 340,
+		"r": "10",
+		"edges": [],
+		"type": "default134",
+		"caution": true,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": "The door doesn't open automatically."
 	}
 ]

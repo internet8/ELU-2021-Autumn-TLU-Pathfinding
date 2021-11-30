@@ -264,21 +264,21 @@
 	},
 	{
 		"index": 15,
-		"x": 1370,
-		"y": 679,
+		"x": "1370",
+		"y": "679",
 		"r": "15",
 		"edges": [
 			76,
 			68
 		],
 		"type": "A002",
-		"caution": false,
+		"caution": true,
 		"room": true,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": "Auditorium Maximum"
+		"message": "Auditorium Maximum, can't go down with a wheelchair."
 	},
 	{
 		"index": 16,
@@ -504,8 +504,8 @@
 	},
 	{
 		"index": 29,
-		"x": 1223,
-		"y": 905,
+		"x": "1223",
+		"y": "905",
 		"r": "15",
 		"edges": [
 			89,
@@ -513,13 +513,13 @@
 			106
 		],
 		"type": "A046",
-		"caution": false,
+		"caution": true,
 		"room": true,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "Not accessible with a wheelchair."
 	},
 	{
 		"index": 30,
@@ -557,20 +557,20 @@
 	},
 	{
 		"index": 32,
-		"x": 1525,
-		"y": 920,
+		"x": "1525",
+		"y": "920",
 		"r": "15",
 		"edges": [
 			79
 		],
 		"type": "WC2",
-		"caution": false,
+		"caution": true,
 		"room": false,
-		"restroom": false,
+		"restroom": true,
 		"stairs": false,
 		"elevator": false,
-		"wheelchair": false,
-		"message": ""
+		"wheelchair": true,
+		"message": "The toilet is in the middle of the room and is hard to use."
 	},
 	{
 		"index": 33,
@@ -1851,20 +1851,20 @@
 	},
 	{
 		"index": 102,
-		"x": 1348,
-		"y": 835,
+		"x": "1348",
+		"y": "835",
 		"r": "15",
 		"edges": [
 			101
 		],
 		"type": "Ramp",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": true,
-		"message": ""
+		"message": "The ramp is too steep."
 	},
 	{
 		"index": 103,

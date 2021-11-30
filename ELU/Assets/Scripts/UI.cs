@@ -15,17 +15,24 @@ public class UI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject floorObj;
     public GameObject searchResultObj, searchBoxObj;
-    public GameObject searchCanvas, mapCanvas, searchBox;
+    public GameObject searchCanvas, mapCanvas, searchBox, exitPrompt;
     private TMP_InputField search;
-    public TMP_Text fromText, toText, floorText;
+    public TMP_Text fromText, toText, floorText, messageText;
     private Pathfinding pathfinding;
     private int fromIndex = -1;
     private int toIndex = -1;
     private int fromFloor = -1;
     private int toFloor = -1;
+    public int currentFloor = 1;
     private string searchLastValue = "";
     private bool fromSearch = true;
     public bool showPath = false;
+    public float pathOneLen, pathTwoLen;
+    public Material lineMaterial;
+    private float tilingFactor = 0.02f;
+    private IconManager iconManager;
+    private MapController mapController;
+    private bool findRestroom = false;
 
     void Start()
     {
@@ -33,24 +40,43 @@ public class UI : MonoBehaviour
         spriteRenderer = floorObj.GetComponent<SpriteRenderer>();
         pathfinding = gameObject.GetComponent<Pathfinding>();
         search = searchBoxObj.GetComponent<TMP_InputField>();
-        SwitchMap(0);
+        iconManager = gameObject.GetComponent<IconManager>();
+        mapController = Camera.main.GetComponent<MapController>();
         SetToShortest();
+    }
+
+    void Update () {
+        if (!search.text.Equals(searchLastValue)) {
+            searchLastValue = search.text;
+            Search(fromSearch);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (searchCanvas.activeSelf) {
+                CloseSearch();
+            } else if (searchBox.activeSelf) {
+                CloseSearchBox();
+            } else if (exitPrompt.activeSelf) {
+                CloseExitPrompt();
+            } else {
+                OpenExitPrompt();
+            }
+        }
     }
 
     public void ShowPath () {
         CloseSearchBox();
-        if (fromIndex > -1 && toIndex > -1) {
+        if (findRestroom) {
+            toFloor = pathfinding.GetClosestRestroomFloor(fromFloor);
+            toIndex = pathfinding.GetClosestRestroom(fromFloor, toFloor, fromIndex);
+            pathfinding.FindPath(fromFloor, toFloor, fromIndex, toIndex);
+            searchCanvas.SetActive(false);
+            mapCanvas.SetActive(true);
+        } else if (fromIndex > -1 && toIndex > -1) {
             pathfinding.FindPath(fromFloor, toFloor, fromIndex, toIndex);
             searchCanvas.SetActive(false);
             mapCanvas.SetActive(true);
         } else if (fromIndex > -1) {
-            Search(fromSearch);
-        }
-    }
-
-    void Update() {
-        if (!search.text.Equals(searchLastValue)) {
-            searchLastValue = search.text;
             Search(fromSearch);
         }
     }
@@ -60,34 +86,61 @@ public class UI : MonoBehaviour
         string input = search.text;
         int index = 0;
         int floorIndex = 0;
+        bool restroom = false;
+        if (input.Length <= 2) {
+            if (("WC").Substring(0, input.Length).ToLower().Equals(input.ToLower()) && !b) {
+                restroom = true;
+            }
+        }
+        if (input.Length <= 8) {
+            if (("Restroom").Substring(0, input.Length).ToLower().Equals(input.ToLower()) && !b) {
+                restroom = true;
+            }
+        }
         foreach (Vertex[] vertices in pathfinding.graphs) {
             foreach (Vertex v in vertices)
             {
                 if (v.type.Length >= input.Length) {
-                    if (v.type.Substring(0, input.Length).ToLower().Equals(input.ToLower()) && v.room) {
+                    if ((v.type.Substring(0, input.Length).ToLower().Equals(input.ToLower()) && v.room) || restroom) {
                         var button = (GameObject)Instantiate(Resources.Load("SearchResultButton", typeof(GameObject))) as GameObject;
                         if (button == null) continue;
                         button.transform.SetParent (searchResultObj.transform);
                         button.transform.localScale = Vector3.one;
                         button.transform.localRotation = Quaternion.Euler (Vector3.zero);
                         button.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(index, index, 0);
-                        button.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = v.type;
+                        if (restroom) {
+                            button.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = "Closest Restroom";
+                        } else {
+                            button.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().text = v.type;
+                        }
                         v.floorIndex = floorIndex;
-                        button.GetComponent<Button>().onClick.AddListener(delegate { 
-                            if (b) { 
-                                fromFloor = v.floorIndex;
-                                fromIndex = v.index;
-                                fromText.text = v.type;
+                        if (restroom) {
+                            button.GetComponent<Button>().onClick.AddListener(delegate { 
+                                toText.text = "Closest Restroom";
+                                findRestroom = true;
+                                toFloor = -1;
+                                toIndex = -1;
                                 CloseSearch();
-                            } else {
-                                toFloor = v.floorIndex;
-                                toIndex = v.index;
-                                toText.text = v.type;
+                                DeleteSearchResults();
+                            });
+                        } else {
+                            button.GetComponent<Button>().onClick.AddListener(delegate { 
+                                if (b) {
+                                    fromFloor = v.floorIndex;
+                                    fromIndex = v.index;
+                                    fromText.text = v.type;
+                                } else {
+                                    findRestroom = false;
+                                    toFloor = v.floorIndex;
+                                    toIndex = v.index;
+                                    toText.text = v.type;
+                                }
                                 CloseSearch();
-                            }
-                            DeleteSearchResults();
-                        });
+                                DeleteSearchResults();
+                            });
+                        }
                         index++;
+                        restroom = false;
                     }
                 }
             }
@@ -105,6 +158,19 @@ public class UI : MonoBehaviour
         searchCanvas.SetActive(false);
         mapCanvas.SetActive(true);
         searchBox.SetActive(true);
+        mapController.controllerEnabled = true;
+    }
+
+    public void OpenExitPrompt () {
+        exitPrompt.SetActive(true);
+    }
+
+    public void CloseExitPrompt () {
+        exitPrompt.SetActive(false);
+    }
+
+    public void CloseApplication () {
+        Application.Quit();
     }
 
     public void OpenSearch (bool b) {
@@ -114,6 +180,7 @@ public class UI : MonoBehaviour
         searchBox.SetActive(false);
         search.Select();
         search.ActivateInputField();
+        mapController.controllerEnabled = false;
     }
 
     public void CloseSearchBox () {
@@ -126,6 +193,20 @@ public class UI : MonoBehaviour
         searchCanvas.SetActive(false);
         mapCanvas.SetActive(true);
         searchBox.SetActive(true);
+    }
+
+    public void MainBackButton () {
+        if (searchCanvas.activeSelf) {
+            CloseSearch();
+        } else if (searchBox.activeSelf) {
+            CloseSearchBox();
+        } else if (exitPrompt.activeSelf) {
+            CloseExitPrompt();
+        } else if (showPath) {
+            pathfinding.RestoreDefaultTextures();
+        } else {
+            OpenExitPrompt();
+        }
     }
 
     // map switching
@@ -155,19 +236,25 @@ public class UI : MonoBehaviour
         pathTo.SetActive(false);
         if (fromFloor == floor && showPath) {
             pathTo.SetActive(true);
+            lineMaterial.SetFloat("_Tiling", pathTwoLen * tilingFactor);
         } else if (toFloor == floor && showPath) {
             pathFrom.SetActive(true);
+            lineMaterial.SetFloat("_Tiling", pathOneLen * tilingFactor);
         }
         spriteRenderer.sprite = floors[floor];
         UnSelectedColor(currentFloorButton);
         currentFloorButton = floorButtons[floor];
         SelectedColor(floorButtons[floor]);
         floorText.text = "Astra/Silva " + floor + "th floor";
+        currentFloor = floor;
+        // caution icons
+        iconManager.DeleteCautionIcons();
+        iconManager.GenerateCautionIcons(pathfinding.graphs[floor]);
     }
 
     private void SelectedColor (Button button) {
         ColorBlock cb = button.colors;
-        Color tlu = new Color(0.72f, 0.07f, 0.2f);
+        Color tlu = new Color(0.8157f, 0.0157f, 0.235f);
         cb.normalColor = tlu;
         cb.highlightedColor = tlu;
         cb.pressedColor = tlu;
@@ -178,12 +265,40 @@ public class UI : MonoBehaviour
 
     private void UnSelectedColor (Button button) {
         ColorBlock cb = button.colors;
-        Color tlu = new Color(0.72f, 0.07f, 0.2f);
+        Color tlu = new Color(0.8157f, 0.0157f, 0.235f);
         cb.normalColor = Color.white;
         cb.highlightedColor = Color.white;
         cb.pressedColor = Color.white;
         cb.selectedColor = Color.white;
         button.colors = cb;
         button.gameObject.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().color = tlu;
+    }
+
+    public void SwitchDirections () {
+        if (findRestroom) {
+            return;
+        }
+        int helperFloor = fromFloor;
+        fromFloor = toFloor;
+        toFloor = helperFloor;
+        int helperIndex = fromIndex;
+        fromIndex = toIndex;
+        toIndex = helperIndex;
+        string helperText = fromText.text;
+        fromText.text = toText.text;
+        toText.text = helperText;
+    }
+
+    public void ShowMessage (string text) {
+        messageText.transform.parent.gameObject.SetActive(true);
+        messageText.text = text;
+    }
+
+    public void HideMessage () {
+        if (showPath) {
+            messageText.text = pathfinding.pathText;
+        } else {
+            messageText.transform.parent.gameObject.SetActive(false);
+        }
     }
 }

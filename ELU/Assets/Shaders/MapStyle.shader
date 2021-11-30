@@ -37,13 +37,13 @@ Shader "Custom/MapStyle"
             if (_Sharpen) {
                 // red
                 if (pow(pow(0.7 - c.r, 2) + pow(0.1 - c.g, 2) + pow(0.2 - c.b, 2), 0.5) < 0.3) {
-                    result = half4(0.7, 0.1, 0.2, 1);
+                    result = half4(0.8157, 0.0157, 0.235, 1);
                 }
                 if (pow(pow(0.78 - c.r, 2) + pow(0.61 - c.g, 2) + pow(0.58 - c.b, 2), 0.5) < 0.3) {
-                    result = half4(0.7, 0.1, 0.2, 1);
+                    result = half4(0.8157, 0.0157, 0.235, 1);
                 }
                 if (pow(pow(0.83 - c.r, 2) + pow(0.72 - c.g, 2) + pow(0.7 - c.b, 2), 0.5) < 0.3) {
-                    result = half4(0.7, 0.1, 0.2, 1);
+                    result = half4(0.8157, 0.0157, 0.235, 1);
                 }
                 // white
                 if (pow(pow(1 - c.r, 2) + pow(1 - c.g, 2) + pow(1 - c.b, 2), 0.5) < 0.2) {

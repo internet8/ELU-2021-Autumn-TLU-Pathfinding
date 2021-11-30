@@ -623,8 +623,8 @@
 	},
 	{
 		"index": 36,
-		"x": "361",
-		"y": "894",
+		"x": 361,
+		"y": 894,
 		"r": "15",
 		"edges": [
 			91,
@@ -927,13 +927,13 @@
 			96
 		],
 		"type": "WC3",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": true,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": true,
-		"message": ""
+		"message": "The sill of the door is too big."
 	},
 	{
 		"index": 54,
@@ -1911,13 +1911,13 @@
 			107
 		],
 		"type": "Hallway43",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 107,
@@ -1959,8 +1959,8 @@
 	},
 	{
 		"index": 109,
-		"x": 1041,
-		"y": 337,
+		"x": "1041",
+		"y": "337",
 		"r": "10",
 		"edges": [
 			107,
@@ -1969,13 +1969,13 @@
 			110
 		],
 		"type": "Hallway46",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 110,
@@ -2121,13 +2121,13 @@
 			120
 		],
 		"type": "Hallway54",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": false,
-		"message": ""
+		"message": "The door doesn't open automatically."
 	},
 	{
 		"index": 118,

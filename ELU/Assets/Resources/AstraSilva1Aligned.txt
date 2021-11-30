@@ -5,7 +5,7 @@
 		"y": 289,
 		"r": "15",
 		"edges": [
-			109
+			107
 		],
 		"type": "S140",
 		"caution": false,
@@ -22,7 +22,7 @@
 		"y": 289,
 		"r": "15",
 		"edges": [
-			110
+			108
 		],
 		"type": "S144",
 		"caution": false,
@@ -39,7 +39,7 @@
 		"y": 234,
 		"r": "15",
 		"edges": [
-			111,
+			109,
 			76
 		],
 		"type": "S142",
@@ -56,7 +56,9 @@
 		"x": 888,
 		"y": 389,
 		"r": "15",
-		"edges": [],
+		"edges": [
+			167
+		],
 		"type": "S103",
 		"caution": false,
 		"room": true,
@@ -122,7 +124,7 @@
 		"y": 389,
 		"r": "15",
 		"edges": [
-			109
+			107
 		],
 		"type": "S139",
 		"caution": false,
@@ -261,7 +263,7 @@
 		"y": 397,
 		"r": "15",
 		"edges": [
-			110
+			108
 		],
 		"type": "S141",
 		"caution": false,
@@ -381,8 +383,8 @@
 		"y": 446,
 		"r": "15",
 		"edges": [
-			111,
-			112
+			109,
+			110
 		],
 		"type": "S153",
 		"caution": false,
@@ -451,7 +453,7 @@
 		"y": 975,
 		"r": "15",
 		"edges": [
-			124
+			122
 		],
 		"type": "A103",
 		"caution": false,
@@ -468,8 +470,8 @@
 		"y": 1008,
 		"r": "15",
 		"edges": [
-			127,
-			123
+			125,
+			121
 		],
 		"type": "Souvenirs and books",
 		"caution": false,
@@ -482,12 +484,12 @@
 	},
 	{
 		"index": 28,
-		"x": "1033",
-		"y": "673",
+		"x": 1033,
+		"y": 673,
 		"r": "15",
 		"edges": [
 			60,
-			129
+			127
 		],
 		"type": "Researchers' Forum",
 		"caution": false,
@@ -504,7 +506,7 @@
 		"y": 571,
 		"r": "15",
 		"edges": [
-			113
+			111
 		],
 		"type": "A107",
 		"caution": false,
@@ -521,7 +523,7 @@
 		"y": 735,
 		"r": "15",
 		"edges": [
-			116
+			114
 		],
 		"type": "A108",
 		"caution": false,
@@ -538,7 +540,7 @@
 		"y": 511,
 		"r": "15",
 		"edges": [
-			112
+			110
 		],
 		"type": "A109",
 		"caution": false,
@@ -555,7 +557,7 @@
 		"y": 611,
 		"r": "15",
 		"edges": [
-			114
+			112
 		],
 		"type": "A110",
 		"caution": false,
@@ -572,7 +574,7 @@
 		"y": 658,
 		"r": "15",
 		"edges": [
-			115
+			113
 		],
 		"type": "A111",
 		"caution": false,
@@ -589,7 +591,7 @@
 		"y": 762,
 		"r": "15",
 		"edges": [
-			117
+			115
 		],
 		"type": "A112",
 		"caution": false,
@@ -606,7 +608,7 @@
 		"y": 897,
 		"r": "15",
 		"edges": [
-			138
+			136
 		],
 		"type": "A118",
 		"caution": false,
@@ -622,7 +624,9 @@
 		"x": 474,
 		"y": 897,
 		"r": "15",
-		"edges": [],
+		"edges": [
+			168
+		],
 		"type": "A119",
 		"caution": false,
 		"room": true,
@@ -638,8 +642,8 @@
 		"y": 1008,
 		"r": "15",
 		"edges": [
-			135,
-			136
+			133,
+			134
 		],
 		"type": "A121",
 		"caution": false,
@@ -656,8 +660,8 @@
 		"y": 762,
 		"r": "15",
 		"edges": [
-			152,
-			131
+			150,
+			129
 		],
 		"type": "A133",
 		"caution": false,
@@ -674,7 +678,7 @@
 		"y": 673,
 		"r": "15",
 		"edges": [
-			151
+			149
 		],
 		"type": "A135",
 		"caution": false,
@@ -691,7 +695,7 @@
 		"y": 611,
 		"r": "15",
 		"edges": [
-			162
+			159
 		],
 		"type": "A136",
 		"caution": false,
@@ -708,7 +712,7 @@
 		"y": 571,
 		"r": "15",
 		"edges": [
-			161
+			158
 		],
 		"type": "A137",
 		"caution": false,
@@ -721,7 +725,7 @@
 	},
 	{
 		"index": 42,
-		"x": 828,
+		"x": 829,
 		"y": 504,
 		"r": "15",
 		"edges": [
@@ -742,7 +746,7 @@
 		"y": 571,
 		"r": "15",
 		"edges": [
-			144
+			142
 		],
 		"type": "A140",
 		"caution": false,
@@ -759,7 +763,7 @@
 		"y": 636,
 		"r": "15",
 		"edges": [
-			142
+			140
 		],
 		"type": "A141",
 		"caution": false,
@@ -776,7 +780,7 @@
 		"y": 706,
 		"r": "15",
 		"edges": [
-			141
+			139
 		],
 		"type": "A142",
 		"caution": false,
@@ -793,7 +797,7 @@
 		"y": 649,
 		"r": "15",
 		"edges": [
-			142
+			140
 		],
 		"type": "A143",
 		"caution": false,
@@ -810,7 +814,7 @@
 		"y": 598,
 		"r": "15",
 		"edges": [
-			143
+			141
 		],
 		"type": "A144",
 		"caution": false,
@@ -827,7 +831,7 @@
 		"y": 555,
 		"r": "15",
 		"edges": [
-			145
+			143
 		],
 		"type": "A145",
 		"caution": false,
@@ -844,7 +848,7 @@
 		"y": 501,
 		"r": "15",
 		"edges": [
-			147
+			145
 		],
 		"type": "A146",
 		"caution": false,
@@ -857,13 +861,13 @@
 	},
 	{
 		"index": 50,
-		"x": 1264,
-		"y": 1073,
+		"x": "1264",
+		"y": "1073",
 		"r": "15",
 		"edges": [
 			71
 		],
-		"type": "A147",
+		"type": "A153",
 		"caution": false,
 		"room": true,
 		"restroom": false,
@@ -895,7 +899,7 @@
 		"y": 289,
 		"r": "15",
 		"edges": [
-			107
+			164
 		],
 		"type": "WC1",
 		"caution": false,
@@ -912,7 +916,7 @@
 		"y": 797,
 		"r": "15",
 		"edges": [
-			118
+			116
 		],
 		"type": "WC2",
 		"caution": false,
@@ -929,7 +933,7 @@
 		"y": 845,
 		"r": "15",
 		"edges": [
-			119
+			117
 		],
 		"type": "WC3",
 		"caution": false,
@@ -946,7 +950,7 @@
 		"y": 797,
 		"r": "15",
 		"edges": [
-			133
+			131
 		],
 		"type": "WC4",
 		"caution": false,
@@ -963,7 +967,7 @@
 		"y": 797,
 		"r": "15",
 		"edges": [
-			132
+			130
 		],
 		"type": "WC5",
 		"caution": false,
@@ -993,12 +997,12 @@
 	},
 	{
 		"index": 58,
-		"x": "397",
-		"y": "746",
+		"x": 397,
+		"y": 746,
 		"r": "15",
 		"edges": [
-			139,
-			150
+			137,
+			148
 		],
 		"type": "A222 1st floor",
 		"caution": false,
@@ -1015,7 +1019,7 @@
 		"y": 925,
 		"r": "15",
 		"edges": [
-			132
+			130
 		],
 		"type": "Cafe",
 		"caution": false,
@@ -1032,9 +1036,10 @@
 		"y": 539,
 		"r": "15",
 		"edges": [
-			155,
-			154,
-			28
+			153,
+			152,
+			28,
+			61
 		],
 		"type": "Elevator0",
 		"caution": false,
@@ -1048,11 +1053,11 @@
 	{
 		"index": 61,
 		"x": 1043,
-		"y": 463,
+		"y": 465,
 		"r": "15",
 		"edges": [
-			108,
-			158
+			166,
+			60
 		],
 		"type": "Elevator1",
 		"caution": false,
@@ -1069,7 +1074,7 @@
 		"y": 961,
 		"r": "15",
 		"edges": [
-			137
+			135
 		],
 		"type": "Elevator2",
 		"caution": false,
@@ -1099,13 +1104,11 @@
 	},
 	{
 		"index": 64,
-		"x": 953,
-		"y": 337,
+		"x": 954,
+		"y": 300,
 		"r": "15",
 		"edges": [
-			107,
-			108,
-			158
+			165
 		],
 		"type": "Stairs1",
 		"caution": false,
@@ -1122,8 +1125,8 @@
 		"y": 492,
 		"r": "15",
 		"edges": [
-			158,
-			154
+			152,
+			166
 		],
 		"type": "Stairs2",
 		"caution": false,
@@ -1140,7 +1143,7 @@
 		"y": 501,
 		"r": "15",
 		"edges": [
-			156
+			154
 		],
 		"type": "Stairs3",
 		"caution": false,
@@ -1157,8 +1160,8 @@
 		"y": 706,
 		"r": "15",
 		"edges": [
-			148,
-			140
+			146,
+			138
 		],
 		"type": "Stairs4",
 		"caution": false,
@@ -1175,8 +1178,8 @@
 		"y": 871,
 		"r": "15",
 		"edges": [
-			134,
-			163
+			132,
+			168
 		],
 		"type": "Stairs5",
 		"caution": false,
@@ -1193,8 +1196,8 @@
 		"y": 845,
 		"r": "15",
 		"edges": [
-			129,
-			159
+			127,
+			156
 		],
 		"type": "Stairs6",
 		"caution": false,
@@ -1207,11 +1210,11 @@
 	},
 	{
 		"index": 70,
-		"x": 953,
+		"x": 954,
 		"y": 961,
 		"r": "15",
 		"edges": [
-			159
+			156
 		],
 		"type": "Stairs8",
 		"caution": false,
@@ -1228,7 +1231,7 @@
 		"y": 1073,
 		"r": "15",
 		"edges": [
-			125,
+			123,
 			50
 		],
 		"type": "Stairs9",
@@ -1261,8 +1264,8 @@
 		"y": 915,
 		"r": "15",
 		"edges": [
-			128,
-			160
+			126,
+			157
 		],
 		"type": "Stairs11",
 		"caution": false,
@@ -1279,8 +1282,8 @@
 		"y": 930,
 		"r": "15",
 		"edges": [
-			160,
-			123
+			157,
+			121
 		],
 		"type": "Stairs12",
 		"caution": false,
@@ -1297,7 +1300,7 @@
 		"y": 897,
 		"r": "15",
 		"edges": [
-			121
+			119
 		],
 		"type": "Stairs13",
 		"caution": false,
@@ -1331,8 +1334,8 @@
 		"y": 337,
 		"r": "15",
 		"edges": [
-			110,
-			111
+			108,
+			109
 		],
 		"type": "Stairs15",
 		"caution": false,
@@ -1350,7 +1353,7 @@
 		"r": "15",
 		"edges": [
 			101,
-			157
+			155
 		],
 		"type": "Stairs16",
 		"caution": false,
@@ -1367,7 +1370,7 @@
 		"y": 658,
 		"r": "15",
 		"edges": [
-			149
+			147
 		],
 		"type": "Stairs17",
 		"caution": false,
@@ -1384,16 +1387,17 @@
 		"y": 580,
 		"r": "15",
 		"edges": [
-			157
+			155,
+			128
 		],
 		"type": "Ramp0",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": true,
-		"message": ""
+		"message": "The ramp is too steep."
 	},
 	{
 		"index": 81,
@@ -1401,8 +1405,8 @@
 		"y": 925,
 		"r": "15",
 		"edges": [
-			130,
-			126
+			128,
+			124
 		],
 		"type": "Ramp1",
 		"caution": false,
@@ -1415,20 +1419,20 @@
 	},
 	{
 		"index": 82,
-		"x": "1212",
-		"y": "845",
+		"x": 1212,
+		"y": 845,
 		"r": "15",
 		"edges": [
-			129
+			127
 		],
 		"type": "Ramp3",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": true,
-		"message": ""
+		"message": "The ramp is too steep."
 	},
 	{
 		"index": 83,
@@ -1791,7 +1795,7 @@
 	{
 		"index": 102,
 		"x": 767,
-		"y": 466,
+		"y": 465,
 		"r": "10",
 		"edges": [
 			101,
@@ -1809,13 +1813,13 @@
 	{
 		"index": 103,
 		"x": 767,
-		"y": 503,
+		"y": 504,
 		"r": "10",
 		"edges": [
 			102,
-			147,
+			145,
 			42,
-			161
+			158
 		],
 		"type": "Hallway19",
 		"caution": false,
@@ -1847,7 +1851,7 @@
 	},
 	{
 		"index": 105,
-		"x": 807,
+		"x": 806,
 		"y": 337,
 		"r": "10",
 		"edges": [
@@ -1870,8 +1874,8 @@
 		"y": 337,
 		"r": "10",
 		"edges": [
-			107,
-			105
+			105,
+			164
 		],
 		"type": "Hallway22",
 		"caution": false,
@@ -1884,52 +1888,14 @@
 	},
 	{
 		"index": 107,
-		"x": 888,
-		"y": 337,
-		"r": "10",
-		"edges": [
-			64,
-			52,
-			106
-		],
-		"type": "Hallway23",
-		"caution": false,
-		"room": false,
-		"restroom": false,
-		"stairs": false,
-		"elevator": false,
-		"wheelchair": false,
-		"message": ""
-	},
-	{
-		"index": 108,
-		"x": 1043,
-		"y": 337,
-		"r": "10",
-		"edges": [
-			64,
-			109,
-			61
-		],
-		"type": "Hallway25",
-		"caution": false,
-		"room": false,
-		"restroom": false,
-		"stairs": false,
-		"elevator": false,
-		"wheelchair": false,
-		"message": ""
-	},
-	{
-		"index": 109,
 		"x": 1176,
 		"y": 337,
 		"r": "10",
 		"edges": [
-			108,
 			0,
 			7,
-			110
+			108,
+			165
 		],
 		"type": "Hallway26",
 		"caution": false,
@@ -1941,12 +1907,12 @@
 		"message": ""
 	},
 	{
-		"index": 110,
+		"index": 108,
 		"x": 1278,
 		"y": 337,
 		"r": "10",
 		"edges": [
-			109,
+			107,
 			1,
 			15,
 			77
@@ -1961,7 +1927,7 @@
 		"message": ""
 	},
 	{
-		"index": 111,
+		"index": 109,
 		"x": 1433,
 		"y": 337,
 		"r": "10",
@@ -1980,14 +1946,14 @@
 		"message": ""
 	},
 	{
-		"index": 112,
+		"index": 110,
 		"x": 1433,
 		"y": 511,
 		"r": "10",
 		"edges": [
 			22,
 			31,
-			113
+			111
 		],
 		"type": "Hallway29",
 		"caution": false,
@@ -1999,14 +1965,14 @@
 		"message": ""
 	},
 	{
-		"index": 113,
+		"index": 111,
 		"x": 1433,
 		"y": 571,
 		"r": "10",
 		"edges": [
-			114,
+			112,
 			29,
-			112
+			110
 		],
 		"type": "Hallway30",
 		"caution": false,
@@ -2018,14 +1984,14 @@
 		"message": ""
 	},
 	{
-		"index": 114,
+		"index": 112,
 		"x": 1433,
 		"y": 611,
 		"r": "10",
 		"edges": [
-			115,
+			113,
 			32,
-			113
+			111
 		],
 		"type": "Hallway31",
 		"caution": false,
@@ -2037,14 +2003,14 @@
 		"message": ""
 	},
 	{
-		"index": 115,
+		"index": 113,
 		"x": 1433,
 		"y": 658,
 		"r": "10",
 		"edges": [
-			116,
+			114,
 			33,
-			114
+			112
 		],
 		"type": "Hallway32",
 		"caution": false,
@@ -2056,14 +2022,14 @@
 		"message": ""
 	},
 	{
-		"index": 116,
+		"index": 114,
 		"x": 1433,
 		"y": 735,
 		"r": "10",
 		"edges": [
-			117,
+			115,
 			30,
-			115
+			113
 		],
 		"type": "Hallway33",
 		"caution": false,
@@ -2075,14 +2041,14 @@
 		"message": ""
 	},
 	{
-		"index": 117,
+		"index": 115,
 		"x": 1433,
 		"y": 762,
 		"r": "10",
 		"edges": [
-			118,
+			116,
 			34,
-			116
+			114
 		],
 		"type": "Hallway34",
 		"caution": false,
@@ -2094,14 +2060,14 @@
 		"message": ""
 	},
 	{
-		"index": 118,
+		"index": 116,
 		"x": 1433,
 		"y": 797,
 		"r": "10",
 		"edges": [
-			119,
+			117,
 			53,
-			117
+			115
 		],
 		"type": "Hallway35",
 		"caution": false,
@@ -2113,15 +2079,15 @@
 		"message": ""
 	},
 	{
-		"index": 119,
+		"index": 117,
 		"x": 1433,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			122,
 			120,
+			118,
 			54,
-			118
+			116
 		],
 		"type": "Hallway36",
 		"caution": false,
@@ -2133,13 +2099,13 @@
 		"message": ""
 	},
 	{
-		"index": 120,
+		"index": 118,
 		"x": 1480,
 		"y": 871,
 		"r": "10",
 		"edges": [
-			119,
-			121
+			117,
+			119
 		],
 		"type": "Hallway37",
 		"caution": false,
@@ -2151,12 +2117,12 @@
 		"message": ""
 	},
 	{
-		"index": 121,
+		"index": 119,
 		"x": 1480,
 		"y": 897,
 		"r": "10",
 		"edges": [
-			120,
+			118,
 			75
 		],
 		"type": "Hallway38",
@@ -2169,13 +2135,13 @@
 		"message": ""
 	},
 	{
-		"index": 122,
+		"index": 120,
 		"x": 1376,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			160,
-			119
+			157,
+			117
 		],
 		"type": "Hallway39",
 		"caution": false,
@@ -2187,14 +2153,14 @@
 		"message": ""
 	},
 	{
-		"index": 123,
+		"index": 121,
 		"x": 1376,
 		"y": 1008,
 		"r": "10",
 		"edges": [
 			27,
-			125,
-			124,
+			123,
+			122,
 			74
 		],
 		"type": "Hallway40",
@@ -2207,12 +2173,12 @@
 		"message": ""
 	},
 	{
-		"index": 124,
+		"index": 122,
 		"x": 1447,
 		"y": 1008,
 		"r": "10",
 		"edges": [
-			123,
+			121,
 			26
 		],
 		"type": "Hallway41",
@@ -2225,12 +2191,12 @@
 		"message": ""
 	},
 	{
-		"index": 125,
+		"index": 123,
 		"x": 1376,
 		"y": 1073,
 		"r": "10",
 		"edges": [
-			123,
+			121,
 			71
 		],
 		"type": "Hallway42",
@@ -2243,13 +2209,13 @@
 		"message": ""
 	},
 	{
-		"index": 126,
+		"index": 124,
 		"x": 918,
 		"y": 1008,
 		"r": "10",
 		"edges": [
 			81,
-			127
+			125
 		],
 		"type": "Hallway43",
 		"caution": false,
@@ -2261,12 +2227,12 @@
 		"message": ""
 	},
 	{
-		"index": 127,
+		"index": 125,
 		"x": 1212,
 		"y": 1008,
 		"r": "10",
 		"edges": [
-			126,
+			124,
 			27
 		],
 		"type": "Hallway44",
@@ -2279,13 +2245,13 @@
 		"message": ""
 	},
 	{
-		"index": 128,
+		"index": 126,
 		"x": 1071,
 		"y": 915,
 		"r": "10",
 		"edges": [
-			129,
-			153,
+			127,
+			151,
 			73
 		],
 		"type": "Hallway45",
@@ -2298,13 +2264,13 @@
 		"message": ""
 	},
 	{
-		"index": 129,
+		"index": 127,
 		"x": 1071,
 		"y": 845,
 		"r": "10",
 		"edges": [
 			28,
-			128,
+			126,
 			82,
 			69
 		],
@@ -2318,14 +2284,15 @@
 		"message": ""
 	},
 	{
-		"index": 130,
+		"index": 128,
 		"x": 918,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			159,
+			156,
 			81,
-			131
+			129,
+			80
 		],
 		"type": "Hallway47",
 		"caution": false,
@@ -2337,14 +2304,14 @@
 		"message": ""
 	},
 	{
-		"index": 131,
+		"index": 129,
 		"x": 829,
 		"y": 845,
 		"r": "10",
 		"edges": [
 			38,
-			130,
-			132
+			128,
+			130
 		],
 		"type": "Hallway48",
 		"caution": false,
@@ -2356,15 +2323,15 @@
 		"message": ""
 	},
 	{
-		"index": 132,
+		"index": 130,
 		"x": 643,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			131,
+			129,
 			59,
 			56,
-			133
+			131
 		],
 		"type": "Hallway49",
 		"caution": false,
@@ -2376,14 +2343,14 @@
 		"message": ""
 	},
 	{
-		"index": 133,
+		"index": 131,
 		"x": 608,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			132,
+			130,
 			55,
-			134
+			132
 		],
 		"type": "Hallway50",
 		"caution": false,
@@ -2395,15 +2362,15 @@
 		"message": ""
 	},
 	{
-		"index": 134,
+		"index": 132,
 		"x": 520,
 		"y": 845,
 		"r": "10",
 		"edges": [
-			133,
+			131,
 			68,
-			139,
-			167
+			137,
+			163
 		],
 		"type": "Hallway51",
 		"caution": false,
@@ -2415,13 +2382,13 @@
 		"message": ""
 	},
 	{
-		"index": 135,
+		"index": 133,
 		"x": 506,
 		"y": 1008,
 		"r": "10",
 		"edges": [
-			163,
-			37
+			37,
+			169
 		],
 		"type": "Hallway52",
 		"caution": false,
@@ -2433,13 +2400,13 @@
 		"message": ""
 	},
 	{
-		"index": 136,
+		"index": 134,
 		"x": 387,
 		"y": 1008,
 		"r": "10",
 		"edges": [
 			37,
-			137
+			135
 		],
 		"type": "Hallway53",
 		"caution": false,
@@ -2451,13 +2418,13 @@
 		"message": ""
 	},
 	{
-		"index": 137,
-		"x": 388,
+		"index": 135,
+		"x": 387,
 		"y": 945,
 		"r": "10",
 		"edges": [
+			134,
 			136,
-			138,
 			62
 		],
 		"type": "Hallway54",
@@ -2470,13 +2437,14 @@
 		"message": ""
 	},
 	{
-		"index": 138,
+		"index": 136,
 		"x": 405,
-		"y": 946,
+		"y": 945,
 		"r": "10",
 		"edges": [
-			137,
-			35
+			135,
+			35,
+			169
 		],
 		"type": "Hallway55",
 		"caution": false,
@@ -2488,14 +2456,14 @@
 		"message": ""
 	},
 	{
-		"index": 139,
+		"index": 137,
 		"x": 520,
 		"y": 746,
 		"r": "10",
 		"edges": [
-			134,
+			132,
 			58,
-			140
+			138
 		],
 		"type": "Hallway56",
 		"caution": false,
@@ -2507,14 +2475,14 @@
 		"message": ""
 	},
 	{
-		"index": 140,
+		"index": 138,
 		"x": 520,
 		"y": 706,
 		"r": "10",
 		"edges": [
 			67,
-			139,
-			141
+			137,
+			139
 		],
 		"type": "Hallway57",
 		"caution": false,
@@ -2526,14 +2494,14 @@
 		"message": ""
 	},
 	{
-		"index": 141,
+		"index": 139,
 		"x": 596,
 		"y": 706,
 		"r": "10",
 		"edges": [
-			140,
+			138,
 			45,
-			142
+			140
 		],
 		"type": "Hallway58",
 		"caution": false,
@@ -2545,15 +2513,15 @@
 		"message": ""
 	},
 	{
-		"index": 142,
+		"index": 140,
 		"x": 596,
 		"y": 643,
 		"r": "10",
 		"edges": [
-			141,
+			139,
 			46,
 			44,
-			143
+			141
 		],
 		"type": "Hallway59",
 		"caution": false,
@@ -2565,14 +2533,14 @@
 		"message": ""
 	},
 	{
-		"index": 143,
+		"index": 141,
 		"x": 596,
 		"y": 598,
 		"r": "10",
 		"edges": [
-			142,
+			140,
 			47,
-			144
+			142
 		],
 		"type": "Hallway60",
 		"caution": false,
@@ -2584,14 +2552,14 @@
 		"message": ""
 	},
 	{
-		"index": 144,
+		"index": 142,
 		"x": 596,
 		"y": 571,
 		"r": "10",
 		"edges": [
-			143,
+			141,
 			43,
-			145
+			143
 		],
 		"type": "Hallway61",
 		"caution": false,
@@ -2603,14 +2571,14 @@
 		"message": ""
 	},
 	{
-		"index": 145,
+		"index": 143,
 		"x": 608,
 		"y": 555,
 		"r": "10",
 		"edges": [
-			144,
+			142,
 			48,
-			146
+			144
 		],
 		"type": "Hallway62",
 		"caution": false,
@@ -2622,14 +2590,14 @@
 		"message": ""
 	},
 	{
-		"index": 146,
+		"index": 144,
 		"x": 608,
 		"y": 529,
 		"r": "10",
 		"edges": [
+			143,
 			145,
-			147,
-			164
+			160
 		],
 		"type": "Hallway63",
 		"caution": false,
@@ -2641,13 +2609,13 @@
 		"message": ""
 	},
 	{
-		"index": 147,
+		"index": 145,
 		"x": 608,
 		"y": 501,
 		"r": "10",
 		"edges": [
 			103,
-			146,
+			144,
 			49
 		],
 		"type": "Hallway64",
@@ -2660,12 +2628,12 @@
 		"message": ""
 	},
 	{
-		"index": 148,
+		"index": 146,
 		"x": 326,
 		"y": 706,
 		"r": "10",
 		"edges": [
-			149,
+			147,
 			67
 		],
 		"type": "Hallway65",
@@ -2678,14 +2646,14 @@
 		"message": ""
 	},
 	{
-		"index": 149,
+		"index": 147,
 		"x": 192,
 		"y": 706,
 		"r": "10",
 		"edges": [
-			150,
+			148,
 			79,
-			148
+			146
 		],
 		"type": "Hallway67",
 		"caution": false,
@@ -2697,13 +2665,13 @@
 		"message": ""
 	},
 	{
-		"index": 150,
+		"index": 148,
 		"x": 192,
 		"y": 746,
 		"r": "10",
 		"edges": [
 			58,
-			149
+			147
 		],
 		"type": "Hallway68",
 		"caution": false,
@@ -2715,14 +2683,14 @@
 		"message": ""
 	},
 	{
-		"index": 151,
+		"index": 149,
 		"x": 785,
 		"y": 673,
 		"r": "10",
 		"edges": [
-			162,
+			159,
 			39,
-			152
+			150
 		],
 		"type": "Hallway69",
 		"caution": false,
@@ -2734,12 +2702,12 @@
 		"message": ""
 	},
 	{
-		"index": 152,
+		"index": 150,
 		"x": 793,
 		"y": 722,
 		"r": "10",
 		"edges": [
-			151,
+			149,
 			38
 		],
 		"type": "Hallway70",
@@ -2752,12 +2720,12 @@
 		"message": ""
 	},
 	{
-		"index": 153,
+		"index": 151,
 		"x": 1058,
 		"y": 1047,
 		"r": "15",
 		"edges": [
-			128
+			126
 		],
 		"type": "AstraEntry",
 		"caution": false,
@@ -2769,7 +2737,7 @@
 		"message": ""
 	},
 	{
-		"index": 154,
+		"index": 152,
 		"x": 967,
 		"y": 539,
 		"r": "10",
@@ -2787,12 +2755,12 @@
 		"message": ""
 	},
 	{
-		"index": 155,
+		"index": 153,
 		"x": 1096,
 		"y": 539,
 		"r": "10",
 		"edges": [
-			156,
+			154,
 			60
 		],
 		"type": "Hallway70",
@@ -2805,13 +2773,13 @@
 		"message": ""
 	},
 	{
-		"index": 156,
+		"index": 154,
 		"x": 1096,
 		"y": 501,
 		"r": "10",
 		"edges": [
 			66,
-			155
+			153
 		],
 		"type": "Hallway71",
 		"caution": false,
@@ -2823,14 +2791,14 @@
 		"message": ""
 	},
 	{
-		"index": 157,
+		"index": 155,
 		"x": 918,
 		"y": 435,
 		"r": "10",
 		"edges": [
 			78,
-			158,
-			80
+			80,
+			166
 		],
 		"type": "Hallway72",
 		"caution": false,
@@ -2842,34 +2810,14 @@
 		"message": ""
 	},
 	{
-		"index": 158,
-		"x": 967,
-		"y": 435,
-		"r": "10",
-		"edges": [
-			157,
-			65,
-			64,
-			61
-		],
-		"type": "Hallway73",
-		"caution": false,
-		"room": false,
-		"restroom": false,
-		"stairs": false,
-		"elevator": false,
-		"wheelchair": false,
-		"message": ""
-	},
-	{
-		"index": 159,
-		"x": 953,
+		"index": 156,
+		"x": 954,
 		"y": 845,
 		"r": "10",
 		"edges": [
 			69,
 			70,
-			130
+			128
 		],
 		"type": "Hallway75",
 		"caution": false,
@@ -2881,14 +2829,14 @@
 		"message": ""
 	},
 	{
-		"index": 160,
+		"index": 157,
 		"x": 1376,
 		"y": 915,
 		"r": "10",
 		"edges": [
 			73,
 			74,
-			122
+			120
 		],
 		"type": "Hallway76",
 		"caution": false,
@@ -2900,14 +2848,14 @@
 		"message": ""
 	},
 	{
-		"index": 161,
+		"index": 158,
 		"x": 767,
-		"y": 570,
+		"y": 571,
 		"r": "10",
 		"edges": [
 			103,
 			41,
-			162
+			159
 		],
 		"type": "Hallway77",
 		"caution": false,
@@ -2919,14 +2867,14 @@
 		"message": ""
 	},
 	{
-		"index": 162,
+		"index": 159,
 		"x": 785,
 		"y": 611,
 		"r": "10",
 		"edges": [
-			161,
+			158,
 			40,
-			151
+			149
 		],
 		"type": "Hallway78",
 		"caution": false,
@@ -2938,33 +2886,14 @@
 		"message": ""
 	},
 	{
-		"index": 163,
-		"x": 506,
-		"y": 946,
-		"r": "10",
-		"edges": [
-			68,
-			135,
-			166
-		],
-		"type": "Hallway79",
-		"caution": false,
-		"room": false,
-		"restroom": false,
-		"stairs": false,
-		"elevator": false,
-		"wheelchair": false,
-		"message": ""
-	},
-	{
-		"index": 164,
-		"x": 634,
-		"y": 529,
+		"index": 160,
+		"x": "634",
+		"y": "529",
 		"r": "15",
 		"edges": [
-			146
+			144
 		],
-		"type": "A153",
+		"type": "A156",
 		"caution": false,
 		"room": true,
 		"restroom": false,
@@ -2974,31 +2903,31 @@
 		"message": ""
 	},
 	{
-		"index": 165,
+		"index": 161,
 		"x": 546,
 		"y": 925,
 		"r": "15",
 		"edges": [
-			166,
-			167
+			162,
+			163
 		],
 		"type": "Ramp2165",
-		"caution": false,
+		"caution": true,
 		"room": false,
 		"restroom": false,
 		"stairs": false,
 		"elevator": false,
 		"wheelchair": true,
-		"message": ""
+		"message": "The ramp is too steep."
 	},
 	{
-		"index": 166,
-		"x": 544,
-		"y": 946,
+		"index": 162,
+		"x": 546,
+		"y": 945,
 		"r": "10",
 		"edges": [
-			163,
-			165
+			161,
+			169
 		],
 		"type": "Hallway50166",
 		"caution": false,
@@ -3010,15 +2939,134 @@
 		"message": ""
 	},
 	{
-		"index": 167,
-		"x": 547,
+		"index": 163,
+		"x": 546,
 		"y": 863,
 		"r": "10",
 		"edges": [
-			165,
-			134
+			161,
+			132
 		],
 		"type": "Hallway50167",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 164,
+		"x": 888,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			106,
+			52,
+			165
+		],
+		"type": "Hallway22168",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 165,
+		"x": 954,
+		"y": 337,
+		"r": "10",
+		"edges": [
+			164,
+			64,
+			107,
+			166,
+			167
+		],
+		"type": "Hallway22169",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 166,
+		"x": 958,
+		"y": 438,
+		"r": "10",
+		"edges": [
+			165,
+			155,
+			65,
+			61,
+			167
+		],
+		"type": "Hallway22170",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 167,
+		"x": 927,
+		"y": 389,
+		"r": "10",
+		"edges": [
+			3,
+			166,
+			165
+		],
+		"type": "Hallway22710",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 168,
+		"x": 507,
+		"y": 904,
+		"r": "10",
+		"edges": [
+			169,
+			68,
+			36
+		],
+		"type": "Hallway22711",
+		"caution": false,
+		"room": false,
+		"restroom": false,
+		"stairs": false,
+		"elevator": false,
+		"wheelchair": false,
+		"message": ""
+	},
+	{
+		"index": 169,
+		"x": 511,
+		"y": 944,
+		"r": "10",
+		"edges": [
+			136,
+			133,
+			162,
+			168
+		],
+		"type": "Hallway22712",
 		"caution": false,
 		"room": false,
 		"restroom": false,
