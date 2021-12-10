@@ -16,6 +16,7 @@ public class Pathfinding : MonoBehaviour
     private UI ui;
     private IconManager iconManager;
     public string pathText = "";
+    public string pathText2 = "";
 
     void Start()
     {
@@ -66,10 +67,11 @@ public class Pathfinding : MonoBehaviour
     public void FindPath (int floorFrom, int floorTo, int indexFrom, int indexTo) {
         noPathError = false;
         pathText = "";
+        pathText2 = "";
         RestoreDefaultTextures();
         if (floorFrom == floorTo) {
             ResetGraph(graphs[floorFrom]);
-            List<Vector3> pathNodesFloor = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][indexTo], floorTo, true);
+            List<Vector3> pathNodesFloor = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][indexTo], floorTo, true, true);
             if (!noPathError) {
                 lineRendererTo.positionCount = pathNodesFloor.Count;
                 lineRendererTo.SetPositions(pathNodesFloor.ToArray());
@@ -77,10 +79,18 @@ public class Pathfinding : MonoBehaviour
                 // icons
                 GameObject startIcon = lineRendererTo.gameObject.transform.GetChild(0).gameObject;
                 GameObject endIcon = lineRendererTo.gameObject.transform.GetChild(1).gameObject;
+                startIcon.SetActive(true);
+                endIcon.SetActive(true);
                 startIcon.transform.position = new Vector2(pathNodesFloor[pathNodesFloor.Count - 1].x - 843, pathNodesFloor[pathNodesFloor.Count - 1].y - 594);
                 endIcon.transform.position = new Vector2(pathNodesFloor[0].x - 843, pathNodesFloor[0].y - 594);
                 startIcon.name = "Starting location: " + graphs[floorFrom][indexFrom].type + ".";
+                if (graphs[floorFrom][indexFrom].caution) {
+                    startIcon.SetActive(false);
+                }
                 endIcon.name = "Destination: " + graphs[floorFrom][indexTo].type + ".";
+                if (graphs[floorFrom][indexTo].caution) {
+                    endIcon.SetActive(false);
+                }
                 // icons old
                 // Vector2 startIcon = new Vector2(graphs[floorFrom][indexFrom].x, graphs[floorFrom][indexFrom].y);
                 // Vector2 endIcon = new Vector2(graphs[floorFrom][indexTo].x, graphs[floorFrom][indexTo].y);
@@ -94,10 +104,10 @@ public class Pathfinding : MonoBehaviour
             FloorConnection fc = GetFloorConnection(floorFrom, floorTo, indexFrom, indexTo);
             if (fc == null) {
                 noPathError = true;
-                ui.ShowMessage("No path found!");
+                ui.ShowMessage("No paths found!");
                 return;
             }
-            List<Vector3> pathNodesFloorTo = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][fc.connectionArray[floorFrom]], floorTo, true);
+            List<Vector3> pathNodesFloorTo = GetFloorWithPath(graphs[floorFrom], graphs[floorFrom][indexFrom], graphs[floorFrom][fc.connectionArray[floorFrom]], floorTo, true, true);
             List<Vector3> pathNodesFloorFrom = GetFloorWithPath(graphs[floorTo], graphs[floorTo][fc.connectionArray[floorTo]], graphs[floorTo][indexTo], floorTo, true);
             if (!noPathError) {
                 lineRendererFrom.positionCount = pathNodesFloorFrom.Count;
@@ -109,17 +119,33 @@ public class Pathfinding : MonoBehaviour
                 // icons
                 GameObject startIcon = lineRendererFrom.gameObject.transform.GetChild(0).gameObject;
                 GameObject endIcon = lineRendererFrom.gameObject.transform.GetChild(1).gameObject;
+                startIcon.SetActive(true);
+                endIcon.SetActive(true);
                 startIcon.transform.position = new Vector2(pathNodesFloorFrom[pathNodesFloorFrom.Count - 1].x - 843, pathNodesFloorFrom[pathNodesFloorFrom.Count - 1].y - 594);
                 endIcon.transform.position = new Vector2(pathNodesFloorFrom[0].x - 843, pathNodesFloorFrom[0].y - 594);
                 startIcon.name = "Starting location: " + graphs[floorTo][fc.connectionArray[floorTo]].type + ".";
+                if (graphs[floorTo][fc.connectionArray[floorTo]].caution) {
+                    startIcon.SetActive(false);
+                }
                 endIcon.name = "Destination: " + graphs[floorTo][indexTo].type + ".";
+                if (graphs[floorTo][indexTo].caution) {
+                    endIcon.SetActive(false);
+                }
                 // icons for second path floor
                 startIcon = lineRendererTo.gameObject.transform.GetChild(0).gameObject;
                 endIcon = lineRendererTo.gameObject.transform.GetChild(1).gameObject;
+                startIcon.SetActive(true);
+                endIcon.SetActive(true);
                 startIcon.transform.position = new Vector2(pathNodesFloorTo[pathNodesFloorTo.Count - 1].x - 843, pathNodesFloorTo[pathNodesFloorTo.Count - 1].y - 594);
                 endIcon.transform.position = new Vector2(pathNodesFloorTo[0].x - 843, pathNodesFloorTo[0].y - 594);
                 startIcon.name = "Starting location: " + graphs[floorFrom][indexFrom].type + ".";
+                if (graphs[floorFrom][indexFrom].caution) {
+                    startIcon.SetActive(false);
+                }
                 endIcon.name = "Destination: " + graphs[floorFrom][fc.connectionArray[floorFrom]].type + ".";
+                if (graphs[floorFrom][fc.connectionArray[floorFrom]].caution) {
+                    endIcon.SetActive(false);
+                }
                 // icons old
                 // Vector2 startIcon = new Vector2(graphs[floorFrom][indexFrom].x, graphs[floorFrom][indexFrom].y);
                 // Vector2 endIcon = new Vector2(graphs[floorFrom][fc.connectionArray[floorFrom]].x, graphs[floorFrom][fc.connectionArray[floorFrom]].y);
@@ -130,13 +156,14 @@ public class Pathfinding : MonoBehaviour
         if (!noPathError) {
             ui.showPath = true;
             ui.SwitchMap(floorFrom);
-            ui.ShowMessage(pathText);
+            ui.ShowMessage(pathText, pathText2);
         }
     }
 
     public void RestoreDefaultTextures () {
         // remove all line renderers
         ui.showPath = false;
+        ui.ResetUI();
         ui.HideMessage();
         ui.SwitchMap(ui.currentFloor);
     }
@@ -208,7 +235,7 @@ public class Pathfinding : MonoBehaviour
         return result;
     }
 
-    public List<Vector3> GetFloorWithPath (Vertex[] graph, Vertex startVertex, Vertex endVertex, int floorTo, bool generateText) {
+    public List<Vector3> GetFloorWithPath (Vertex[] graph, Vertex startVertex, Vertex endVertex, int floorTo, bool generateText, bool text1 = false) {
         List<Vector3> result = new List<Vector3>();
         List<Vertex> vertexPath = new List<Vertex>();
         // calling dijkstra
@@ -226,12 +253,16 @@ public class Pathfinding : MonoBehaviour
                 count++;
             }
             if (generateText) {
-                pathText += PathToText(vertexPath, floorTo);
+                if (text1) {
+                    pathText += PathToText(vertexPath, floorTo);
+                } else {
+                    pathText2 += PathToText(vertexPath, floorTo);
+                }
             }
         } else {
             noPathError = true;
             //Debug.Log("No path found!");
-            ui.ShowMessage("No path found!");
+            ui.ShowMessage("No paths found!");
         }
         return result;
     }
@@ -347,13 +378,13 @@ public class Pathfinding : MonoBehaviour
                 }
                 distanceTraveled = 0;
                 if (path[i-1].stairs) {
-                    result += "Use stairs to go to the floor " + floorTo + ". ";
+                    result += "Use stairs to go to the " + ui.floorLabels[floorTo] + " floor. ";
                 } else if (path[i-1].elevator) {
-                    result += "Use elevator to go to the floor " + floorTo + ". ";
+                    result += "Use elevator to go to the " + ui.floorLabels[floorTo] + " floor. ";
                 } else if (path[i-1].wheelchair && !path[i-1].restroom) {
-                    result += "Use ramp to go to the floor " + floorTo + ". ";
+                    result += "Use ramp to go to the " + ui.floorLabels[floorTo] + " floor. ";
                 } else {
-                    result += "You have arrived at the selected destination: " + path[i-1].type + ". ";
+                    result += "You have arrived at the selected location: " + path[i-1].type + ". ";
                 }
             } else if (path[i].room) {
                 if (i == path.Count-1 && path[i].room) {

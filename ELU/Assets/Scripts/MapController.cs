@@ -37,7 +37,7 @@ public class MapController : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            Zoom(difference * 0.001f * scrollSpeed);
+            Zoom(difference * 0.002f * scrollSpeed);
         } else if (Input.GetMouseButton(0)) {
             Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if ((Camera.main.transform.position + direction).x < 1600 / Remap(500, 2160, 2, 1, Camera.main.orthographicSize) && (Camera.main.transform.position + direction).x > -1600 / Remap(500, 2160, 2, 1, Camera.main.orthographicSize) && (Camera.main.transform.position + direction).y < 1600 / Remap(500, 2160, 2, 1, Camera.main.orthographicSize) && (Camera.main.transform.position + direction).y > -1600 / Remap(500, 2160, 2, 1, Camera.main.orthographicSize)) {
@@ -61,6 +61,7 @@ public class MapController : MonoBehaviour
             GameObject touchedObject = hitInformation.transform.gameObject;
             //Debug.Log(touchedObject.transform.name);
             ui.ShowMessage(touchedObject.transform.name);
+            ui.displayingIconText = true;
         }
     }
 
